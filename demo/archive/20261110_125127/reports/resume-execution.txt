@@ -1,0 +1,27 @@
+RÉSUMÉ D'EXÉCUTION - TESTS AFFARIYET
+Date : 10/11/2026 12:20:45
+Total : 20 | Réussis : 17 | Échoués : 2 | Ignorés : 1 | Durée : 250,8 s
+
+RÉUSSI    TC01 - Accès à la page d'accueil
+RÉUSSI    TC02 - Vérification du titre de la page d'accueil
+RÉUSSI    TC03 - Recherche d'un produit existant
+RÉUSSI    TC04 - Recherche d'un produit inexistant
+RÉUSSI    TC05 - Navigation entre catégories
+RÉUSSI    TC06 - Consultation d'un produit
+RÉUSSI    TC07 - Vérification du prix d'un produit
+RÉUSSI    TC08 - Ajout d'un produit au panier
+RÉUSSI    TC09 - Vérification du contenu du panier
+RÉUSSI    TC10 - Modification de la quantité
+RÉUSSI    TC11 - Suppression d'un produit du panier
+RÉUSSI    TC12 - Vérification du panier vide
+IGNORÉ    TC13 - Connexion valide
+          -> org.testng.SkipException: Identifiants absents : définir AFFARIYET_EMAIL et AFFARIYET_PASSWORD (compte de test personnel) pour exécuter ce test
+RÉUSSI    TC14 - Connexion invalide
+RÉUSSI    TC15 - Accès à la page d'inscription
+RÉUSSI    TC16 - Validation des champs obligatoires
+RÉUSSI    TC17 - Consultation des informations de livraison
+ÉCHOUÉ    TC18 - Consultation de la page contact
+          -> java.lang.AssertionError: The following asserts failed:
+RÉUSSI    TC19 - Navigation entre les pages de produits (pagination)
+ÉCHOUÉ    TC20 - Fonctionnalité supplémentaire : tri par prix croissant
+          -> org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "order=product.price.asc". Current url: "https://www.affariyet.com/recherche?controller=search&s=samsung" (tried for 20 second(s) with 500 milliseconds interval)

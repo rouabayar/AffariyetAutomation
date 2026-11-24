@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+  Suite des 20 tests fonctionnels Affariyet.
+  Les priorités (1 à 20) imposent l'ordre TC01 → TC20 entre les classes.
+  Les outils d'inspection (package tools) ne font PAS partie de la suite.
+-->
+<suite name="Affariyet Test Suite" verbose="1">
+
+    <listeners>
+        <!-- Traces console + reports/logs/execution.log -->
+        <listener class-name="com.affariyet.listeners.TestListener"/>
+        <!-- Tableau de bord reports/rapport-execution.html + reports/resume-execution.txt -->
+        <listener class-name="com.affariyet.listeners.HtmlReportGenerator"/>
+    </listeners>
+
+    <test name="Affariyet Functional Tests">
+        <classes>
+            <class name="com.affariyet.tests.AccueilTest"/>          <!-- TC01-TC02 -->
+            <class name="com.affariyet.tests.RechercheTest"/>        <!-- TC03, TC04, TC19, TC20 -->
+            <class name="com.affariyet.tests.CatalogueTest"/>        <!-- TC05-TC07 -->
+            <class name="com.affariyet.tests.PanierTest"/>           <!-- TC08-TC12 -->
+            <class name="com.affariyet.tests.CompteTest"/>           <!-- TC13-TC16 -->
+            <class name="com.affariyet.tests.PagesInformationTest"/> <!-- TC17-TC18 -->
+        </classes>
+    </test>
+</suite>

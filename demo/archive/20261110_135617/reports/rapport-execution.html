@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><title>Rapport d'exécution - Tests Affariyet</title><style>body{font-family:Segoe UI,Arial,sans-serif;margin:24px;color:#222}h1{margin:0 0 4px}.meta{color:#666;margin-bottom:18px}.cards{display:flex;gap:12px;margin-bottom:20px}.card{padding:12px 18px;border-radius:8px;min-width:120px}.card b{display:block;font-size:28px}.t{background:#eef}.p{background:#e3f6e8}.f{background:#fde4e4}.s{background:#fff4d6}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #ddd;padding:6px 8px;vertical-align:top;text-align:left}th{background:#f3f3f3}tr.ok .st{color:#1a7f37;font-weight:bold}tr.ko .st{color:#c62828;font-weight:bold}tr.skip .st{color:#a66b00;font-weight:bold}pre{white-space:pre-wrap;font-size:12px}</style></head><body><h1>Rapport d'exécution — Tests fonctionnels Affariyet</h1><div class="meta">Généré le 10/11/2026 13:22:53 · Site : https://www.affariyet.com/ · Navigateur : chrome · Java 17.0.20.1 · Durée cumulée : 350,0 s</div><div class="cards"><div class="card t">Total<b>20</b></div><div class="card p">Réussis<b>18</b></div><div class="card f">Échoués<b>1</b></div><div class="card s">Ignorés<b>1</b></div></div><table><tr><th>Cas de test</th><th>Méthode</th><th>Statut</th><th>Durée</th><th>Erreur / trace</th><th>Preuves</th></tr>
+<tr class="ok"><td>TC01 - Accès à la page d'accueil</td><td><code>AccueilTest.tc01_accesPageAccueil</code></td><td class="st">RÉUSSI</td><td>4,1 s</td><td></td><td></td></tr>
+<tr class="ok"><td>TC02 - Vérification du titre de la page d'accueil</td><td><code>AccueilTest.tc02_verificationTitre</code></td><td class="st">RÉUSSI</td><td>3,4 s</td><td></td><td></td></tr>
+<tr class="ok"><td>TC03 - Recherche d'un produit existant</td><td><code>RechercheTest.tc03_rechercheProduitExistant</code></td><td class="st">RÉUSSI</td><td>7,8 s</td><td></td><td></td></tr>
+<tr class="ok"><td>TC04 - Recherche d'un produit inexistant</td><td><code>RechercheTest.tc04_rechercheProduitInexistant</code></td><td class="st">RÉUSSI</td><td>7,4 s</td><td></td><td></td></tr>
+<tr class="ok"><td>TC05 - Navigation entre catégories</td><td><code>CatalogueTest.tc05_navigationEntreCategories</code></td><td class="st">RÉUSSI</td><td>14,4 s</td><td></td><td></td></tr>
+<tr class="ok"><td>TC06 - Consultation d'un produit</td><td><code>CatalogueTest.tc06_consultationProduit</code></td><td class="st">RÉUSSI</td><td>12,9 s</td><td></td><td></td></tr>
+<tr class="ok"><td>TC07 - Vérification du prix d'un produit</td><td><code>CatalogueTest.tc07_verificationPrix</code></td><td class="st">RÉUSSI</td><td>11,1 s</td><td></td><td></td></tr>
+<tr class="ok"><td>TC08 - Ajout d'un produit au panier</td><td><code>PanierTest.tc08_ajoutAuPanier</code></td><td class="st">RÉUSSI</td><td>12,0 s</td><td></td><td></td></tr>
+<tr class="ok"><td>TC09 - Vérification du contenu du panier</td><td><code>PanierTest.tc09_verificationPanier</code></td><td class="st">RÉUSSI</td><td>30,5 s</td><td></td><td></td></tr>
+<tr class="ok"><td>TC10 - Modification de la quantité</td><td><code>PanierTest.tc10_modificationQuantite</code></td><td class="st">RÉUSSI</td><td>29,8 s</td><td></td><td></td></tr>
+<tr class="ok"><td>TC11 - Suppression d'un produit du panier</td><td><code>PanierTest.tc11_suppressionProduit</code></td><td class="st">RÉUSSI</td><td>27,7 s</td><td></td><td></td></tr>
+<tr class="ok"><td>TC12 - Vérification du panier vide</td><td><code>PanierTest.tc12_panierVide</code></td><td class="st">RÉUSSI</td><td>19,6 s</td><td></td><td></td></tr>
+<tr class="skip"><td>TC13 - Connexion valide</td><td><code>CompteTest.tc13_connexionValide</code></td><td class="st">IGNORÉ</td><td>0,0 s</td><td>org.testng.SkipException: Identifiants absents : définir AFFARIYET_EMAIL et AFFARIYET_PASSWORD (compte de test personnel) pour exécuter ce test</td><td></td></tr>
+<tr class="ok"><td>TC14 - Connexion invalide</td><td><code>CompteTest.tc14_connexionInvalide</code></td><td class="st">RÉUSSI</td><td>23,7 s</td><td></td><td></td></tr>
+<tr class="ok"><td>TC15 - Accès à la page d'inscription</td><td><code>CompteTest.tc15_accesInscription</code></td><td class="st">RÉUSSI</td><td>27,1 s</td><td></td><td></td></tr>
+<tr class="ok"><td>TC16 - Validation des champs obligatoires</td><td><code>CompteTest.tc16_validationChampsObligatoires</code></td><td class="st">RÉUSSI</td><td>25,4 s</td><td></td><td></td></tr>
+<tr class="ok"><td>TC17 - Consultation des informations de livraison</td><td><code>PagesInformationTest.tc17_informationsLivraison</code></td><td class="st">RÉUSSI</td><td>15,2 s</td><td></td><td></td></tr>
+<tr class="ok"><td>TC18 - Consultation de la page contact</td><td><code>PagesInformationTest.tc18_pageContact</code></td><td class="st">RÉUSSI</td><td>25,8 s</td><td></td><td></td></tr>
+<tr class="ok"><td>TC19 - Navigation entre les pages de produits (pagination)</td><td><code>RechercheTest.tc19_navigationEntrePagesProduits</code></td><td class="st">RÉUSSI</td><td>24,6 s</td><td></td><td></td></tr>
+<tr class="ko"><td>TC20 - Fonctionnalité supplémentaire : tri par prix croissant</td><td><code>RechercheTest.tc20_triParPrixCroissant</code></td><td class="st">ÉCHOUÉ</td><td>27,5 s</td><td>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;order=product.price.asc&quot;. Current url: &quot;https://www.affariyet.com/recherche?controller=search&amp;s=samsung&quot; (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55583}, goog:processID: 27932, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55583/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ac055a45dacc0d8ede6942a95ec7cec<details><summary>Trace</summary><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;order=product.price.asc&quot;. Current url: &quot;https://www.affariyet.com/recherche?controller=search&amp;s=samsung&quot; (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55583}, goog:processID: 27932, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55583/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ac055a45dacc0d8ede6942a95ec7cec
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.affariyet.utils.WaitUtils.urlContains(WaitUtils.java:58)
+	at com.affariyet.pages.ProductListPage.sortByPriceAscending(ProductListPage.java:101)
+	at com.affariyet.tests.RechercheTest.tc20_triParPrixCroissant(RechercheTest.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+</pre></details></td><td><a href="../screenshots/tc20_triParPrixCroissant_20261110_132253.png">capture</a> · <a href="../screenshots/tc20_triParPrixCroissant_20261110_132253.html">HTML</a></td></tr>
+</table><p class="meta">Rapports TestNG détaillés : test-output/index.html et test-output/emailable-report.html · Traces : reports/logs/execution.log</p></body></html>

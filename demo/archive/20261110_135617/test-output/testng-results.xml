@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="20" passed="18" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-11-10T13:16:43 CET" name="Affariyet Test Suite" finished-at="2026-11-10T13:22:53 CET" duration-ms="370650">
+    <groups>
+    </groups>
+    <test started-at="2026-11-10T13:16:43 CET" name="TC01-TC04 Accueil et recherche" finished-at="2026-11-10T13:17:10 CET" duration-ms="27119">
+      <class name="com.affariyet.tests.RechercheTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.affariyet.tests.RechercheTest@123ef382]" started-at="2026-11-10T13:16:53 CET" name="setUp" finished-at="2026-11-10T13:16:54 CET" duration-ms="839" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.affariyet.tests.RechercheTest.tc03_rechercheProduitExistant()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc03_rechercheProduitExistant()[pri:3, instance:com.affariyet.tests.RechercheTest@123ef382]" started-at="2026-11-10T13:16:54 CET" name="tc03_rechercheProduitExistant" description="TC03 - Recherche d&#039;un produit existant" finished-at="2026-11-10T13:17:01 CET" duration-ms="7799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_rechercheProduitExistant -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.affariyet.tests.RechercheTest@123ef382]" started-at="2026-11-10T13:17:01 CET" name="tearDown" finished-at="2026-11-10T13:17:02 CET" duration-ms="120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc03_rechercheProduitExistant status=SUCCESS method=RechercheTest.tc03_rechercheProduitExistant()[pri:3, instance:com.affariyet.tests.RechercheTest@123ef382] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.affariyet.tests.RechercheTest@123ef382]" started-at="2026-11-10T13:17:02 CET" name="setUp" finished-at="2026-11-10T13:17:02 CET" duration-ms="802" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.affariyet.tests.RechercheTest.tc04_rechercheProduitInexistant()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc04_rechercheProduitInexistant()[pri:4, instance:com.affariyet.tests.RechercheTest@123ef382]" started-at="2026-11-10T13:17:02 CET" name="tc04_rechercheProduitInexistant" description="TC04 - Recherche d&#039;un produit inexistant" finished-at="2026-11-10T13:17:10 CET" duration-ms="7412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc04_rechercheProduitInexistant -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.affariyet.tests.RechercheTest@123ef382]" started-at="2026-11-10T13:17:10 CET" name="tearDown" finished-at="2026-11-10T13:17:10 CET" duration-ms="127" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc04_rechercheProduitInexistant status=SUCCESS method=RechercheTest.tc04_rechercheProduitInexistant()[pri:4, instance:com.affariyet.tests.RechercheTest@123ef382] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.affariyet.tests.RechercheTest -->
+      <class name="com.affariyet.tests.AccueilTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.affariyet.tests.AccueilTest@3d51f06e]" started-at="2026-11-10T13:16:43 CET" name="setUp" finished-at="2026-11-10T13:16:44 CET" duration-ms="1308" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.affariyet.tests.AccueilTest.tc01_accesPageAccueil()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc01_accesPageAccueil()[pri:1, instance:com.affariyet.tests.AccueilTest@3d51f06e]" started-at="2026-11-10T13:16:44 CET" name="tc01_accesPageAccueil" description="TC01 - Accès à la page d&#039;accueil" finished-at="2026-11-10T13:16:48 CET" duration-ms="4132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_accesPageAccueil -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.affariyet.tests.AccueilTest@3d51f06e]" started-at="2026-11-10T13:16:48 CET" name="tearDown" finished-at="2026-11-10T13:16:48 CET" duration-ms="107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_accesPageAccueil status=SUCCESS method=AccueilTest.tc01_accesPageAccueil()[pri:1, instance:com.affariyet.tests.AccueilTest@3d51f06e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.affariyet.tests.AccueilTest@3d51f06e]" started-at="2026-11-10T13:16:48 CET" name="setUp" finished-at="2026-11-10T13:16:49 CET" duration-ms="903" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.affariyet.tests.AccueilTest.tc02_verificationTitre()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc02_verificationTitre()[pri:2, instance:com.affariyet.tests.AccueilTest@3d51f06e]" started-at="2026-11-10T13:16:49 CET" name="tc02_verificationTitre" description="TC02 - Vérification du titre de la page d&#039;accueil" finished-at="2026-11-10T13:16:53 CET" duration-ms="3380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_verificationTitre -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.affariyet.tests.AccueilTest@3d51f06e]" started-at="2026-11-10T13:16:53 CET" name="tearDown" finished-at="2026-11-10T13:16:53 CET" duration-ms="143" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_verificationTitre status=SUCCESS method=AccueilTest.tc02_verificationTitre()[pri:2, instance:com.affariyet.tests.AccueilTest@3d51f06e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.affariyet.tests.AccueilTest -->
+    </test> <!-- TC01-TC04 Accueil et recherche -->
+    <test started-at="2026-11-10T13:17:10 CET" name="TC05-TC18 Catalogue, panier, compte et informations" finished-at="2026-11-10T13:21:59 CET" duration-ms="289179">
+      <class name="com.affariyet.tests.PanierTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.affariyet.tests.PanierTest@747ddf94]" started-at="2026-11-10T13:17:51 CET" name="setUp" finished-at="2026-11-10T13:17:52 CET" duration-ms="865" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.affariyet.tests.PanierTest.tc08_ajoutAuPanier()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc08_ajoutAuPanier()[pri:8, instance:com.affariyet.tests.PanierTest@747ddf94]" started-at="2026-11-10T13:17:52 CET" name="tc08_ajoutAuPanier" description="TC08 - Ajout d&#039;un produit au panier" finished-at="2026-11-10T13:18:04 CET" duration-ms="11987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc08_ajoutAuPanier -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.affariyet.tests.PanierTest@747ddf94]" started-at="2026-11-10T13:18:04 CET" name="tearDown" finished-at="2026-11-10T13:18:04 CET" duration-ms="149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc08_ajoutAuPanier status=SUCCESS method=PanierTest.tc08_ajoutAuPanier()[pri:8, instance:com.affariyet.tests.PanierTest@747ddf94] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.affariyet.tests.PanierTest@747ddf94]" started-at="2026-11-10T13:18:04 CET" name="setUp" finished-at="2026-11-10T13:18:05 CET" duration-ms="748" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.affariyet.tests.PanierTest.tc09_verificationPanier()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc09_verificationPanier()[pri:9, instance:com.affariyet.tests.PanierTest@747ddf94]" started-at="2026-11-10T13:18:05 CET" name="tc09_verificationPanier" description="TC09 - Vérification du contenu du panier" finished-at="2026-11-10T13:18:35 CET" duration-ms="30477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc09_verificationPanier -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.affariyet.tests.PanierTest@747ddf94]" started-at="2026-11-10T13:18:35 CET" name="tearDown" finished-at="2026-11-10T13:18:35 CET" duration-ms="193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc09_verificationPanier status=SUCCESS method=PanierTest.tc09_verificationPanier()[pri:9, instance:com.affariyet.tests.PanierTest@747ddf94] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.affariyet.tests.PanierTest@747ddf94]" started-at="2026-11-10T13:18:35 CET" name="setUp" finished-at="2026-11-10T13:18:36 CET" duration-ms="965" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.affariyet.tests.PanierTest.tc10_modificationQuantite()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc10_modificationQuantite()[pri:10, instance:com.affariyet.tests.PanierTest@747ddf94]" started-at="2026-11-10T13:18:36 CET" name="tc10_modificationQuantite" description="TC10 - Modification de la quantité" finished-at="2026-11-10T13:19:06 CET" duration-ms="29813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc10_modificationQuantite -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.affariyet.tests.PanierTest@747ddf94]" started-at="2026-11-10T13:19:06 CET" name="tearDown" finished-at="2026-11-10T13:19:07 CET" duration-ms="462" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc10_modificationQuantite status=SUCCESS method=PanierTest.tc10_modificationQuantite()[pri:10, instance:com.affariyet.tests.PanierTest@747ddf94] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.affariyet.tests.PanierTest@747ddf94]" started-at="2026-11-10T13:19:07 CET" name="setUp" finished-at="2026-11-10T13:19:08 CET" duration-ms="857" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.affariyet.tests.PanierTest.tc11_suppressionProduit()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc11_suppressionProduit()[pri:11, instance:com.affariyet.tests.PanierTest@747ddf94]" started-at="2026-11-10T13:19:08 CET" name="tc11_suppressionProduit" description="TC11 - Suppression d&#039;un produit du panier" finished-at="2026-11-10T13:19:35 CET" duration-ms="27674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc11_suppressionProduit -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.affariyet.tests.PanierTest@747ddf94]" started-at="2026-11-10T13:19:35 CET" name="tearDown" finished-at="2026-11-10T13:19:35 CET" duration-ms="166" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc11_suppressionProduit status=SUCCESS method=PanierTest.tc11_suppressionProduit()[pri:11, instance:com.affariyet.tests.PanierTest@747ddf94] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.affariyet.tests.PanierTest@747ddf94]" started-at="2026-11-10T13:19:35 CET" name="setUp" finished-at="2026-11-10T13:19:36 CET" duration-ms="871" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.affariyet.tests.PanierTest.tc12_panierVide()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc12_panierVide()[pri:12, instance:com.affariyet.tests.PanierTest@747ddf94]" started-at="2026-11-10T13:19:36 CET" name="tc12_panierVide" description="TC12 - Vérification du panier vide" finished-at="2026-11-10T13:19:56 CET" duration-ms="19613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc12_panierVide -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.affariyet.tests.PanierTest@747ddf94]" started-at="2026-11-10T13:19:56 CET" name="tearDown" finished-at="2026-11-10T13:19:56 CET" duration-ms="116" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc12_panierVide status=SUCCESS method=PanierTest.tc12_panierVide()[pri:12, instance:com.affariyet.tests.PanierTest@747ddf94] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.affariyet.tests.PanierTest -->
+      <class name="com.affariyet.tests.CatalogueTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.affariyet.tests.CatalogueTest@2f9f7dcf]" started-at="2026-11-10T13:17:10 CET" name="setUp" finished-at="2026-11-10T13:17:11 CET" duration-ms="758" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.affariyet.tests.CatalogueTest.tc05_navigationEntreCategories()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc05_navigationEntreCategories()[pri:5, instance:com.affariyet.tests.CatalogueTest@2f9f7dcf]" started-at="2026-11-10T13:17:11 CET" name="tc05_navigationEntreCategories" description="TC05 - Navigation entre catégories" finished-at="2026-11-10T13:17:25 CET" duration-ms="14372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc05_navigationEntreCategories -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.affariyet.tests.CatalogueTest@2f9f7dcf]" started-at="2026-11-10T13:17:25 CET" name="tearDown" finished-at="2026-11-10T13:17:25 CET" duration-ms="114" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc05_navigationEntreCategories status=SUCCESS method=CatalogueTest.tc05_navigationEntreCategories()[pri:5, instance:com.affariyet.tests.CatalogueTest@2f9f7dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.affariyet.tests.CatalogueTest@2f9f7dcf]" started-at="2026-11-10T13:17:25 CET" name="setUp" finished-at="2026-11-10T13:17:26 CET" duration-ms="761" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.affariyet.tests.CatalogueTest.tc06_consultationProduit()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc06_consultationProduit()[pri:6, instance:com.affariyet.tests.CatalogueTest@2f9f7dcf]" started-at="2026-11-10T13:17:26 CET" name="tc06_consultationProduit" description="TC06 - Consultation d&#039;un produit" finished-at="2026-11-10T13:17:39 CET" duration-ms="12913" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc06_consultationProduit -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.affariyet.tests.CatalogueTest@2f9f7dcf]" started-at="2026-11-10T13:17:39 CET" name="tearDown" finished-at="2026-11-10T13:17:39 CET" duration-ms="134" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc06_consultationProduit status=SUCCESS method=CatalogueTest.tc06_consultationProduit()[pri:6, instance:com.affariyet.tests.CatalogueTest@2f9f7dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.affariyet.tests.CatalogueTest@2f9f7dcf]" started-at="2026-11-10T13:17:39 CET" name="setUp" finished-at="2026-11-10T13:17:40 CET" duration-ms="758" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.affariyet.tests.CatalogueTest.tc07_verificationPrix()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc07_verificationPrix()[pri:7, instance:com.affariyet.tests.CatalogueTest@2f9f7dcf]" started-at="2026-11-10T13:17:40 CET" name="tc07_verificationPrix" description="TC07 - Vérification du prix d&#039;un produit" finished-at="2026-11-10T13:17:51 CET" duration-ms="11147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc07_verificationPrix -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.affariyet.tests.CatalogueTest@2f9f7dcf]" started-at="2026-11-10T13:17:51 CET" name="tearDown" finished-at="2026-11-10T13:17:51 CET" duration-ms="122" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc07_verificationPrix status=SUCCESS method=CatalogueTest.tc07_verificationPrix()[pri:7, instance:com.affariyet.tests.CatalogueTest@2f9f7dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.affariyet.tests.CatalogueTest -->
+      <class name="com.affariyet.tests.PagesInformationTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.affariyet.tests.PagesInformationTest@1bd4fdd]" started-at="2026-11-10T13:21:16 CET" name="setUp" finished-at="2026-11-10T13:21:17 CET" duration-ms="1003" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.affariyet.tests.PagesInformationTest.tc17_informationsLivraison()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc17_informationsLivraison()[pri:17, instance:com.affariyet.tests.PagesInformationTest@1bd4fdd]" started-at="2026-11-10T13:21:17 CET" name="tc17_informationsLivraison" description="TC17 - Consultation des informations de livraison" finished-at="2026-11-10T13:21:32 CET" duration-ms="15202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc17_informationsLivraison -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.affariyet.tests.PagesInformationTest@1bd4fdd]" started-at="2026-11-10T13:21:32 CET" name="tearDown" finished-at="2026-11-10T13:21:32 CET" duration-ms="116" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc17_informationsLivraison status=SUCCESS method=PagesInformationTest.tc17_informationsLivraison()[pri:17, instance:com.affariyet.tests.PagesInformationTest@1bd4fdd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.affariyet.tests.PagesInformationTest@1bd4fdd]" started-at="2026-11-10T13:21:32 CET" name="setUp" finished-at="2026-11-10T13:21:33 CET" duration-ms="851" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.affariyet.tests.PagesInformationTest.tc18_pageContact()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc18_pageContact()[pri:18, instance:com.affariyet.tests.PagesInformationTest@1bd4fdd]" started-at="2026-11-10T13:21:33 CET" name="tc18_pageContact" description="TC18 - Consultation de la page contact" finished-at="2026-11-10T13:21:59 CET" duration-ms="25786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc18_pageContact -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.affariyet.tests.PagesInformationTest@1bd4fdd]" started-at="2026-11-10T13:21:59 CET" name="tearDown" finished-at="2026-11-10T13:21:59 CET" duration-ms="167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc18_pageContact status=SUCCESS method=PagesInformationTest.tc18_pageContact()[pri:18, instance:com.affariyet.tests.PagesInformationTest@1bd4fdd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.affariyet.tests.PagesInformationTest -->
+      <class name="com.affariyet.tests.CompteTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.affariyet.tests.CompteTest@35e2d654]" started-at="2026-11-10T13:19:56 CET" name="setUp" finished-at="2026-11-10T13:19:57 CET" duration-ms="832" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.affariyet.tests.CompteTest.tc13_connexionValide()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc13_connexionValide()[pri:13, instance:com.affariyet.tests.CompteTest@35e2d654]" started-at="2026-11-10T13:19:57 CET" name="tc13_connexionValide" description="TC13 - Connexion valide" finished-at="2026-11-10T13:19:57 CET" duration-ms="0" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Identifiants absents : définir AFFARIYET_EMAIL et AFFARIYET_PASSWORD (compte de test personnel) pour exécuter ce test]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Identifiants absents : définir AFFARIYET_EMAIL et AFFARIYET_PASSWORD (compte de test personnel) pour exécuter ce test
+at com.affariyet.tests.CompteTest.tc13_connexionValide(CompteTest.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc13_connexionValide -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.affariyet.tests.CompteTest@35e2d654]" started-at="2026-11-10T13:19:57 CET" name="tearDown" finished-at="2026-11-10T13:19:57 CET" duration-ms="92" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc13_connexionValide status=SKIP method=CompteTest.tc13_connexionValide()[pri:13, instance:com.affariyet.tests.CompteTest@35e2d654] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.affariyet.tests.CompteTest@35e2d654]" started-at="2026-11-10T13:19:57 CET" name="setUp" finished-at="2026-11-10T13:19:58 CET" duration-ms="869" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.affariyet.tests.CompteTest.tc14_connexionInvalide()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc14_connexionInvalide()[pri:14, instance:com.affariyet.tests.CompteTest@35e2d654]" started-at="2026-11-10T13:19:58 CET" name="tc14_connexionInvalide" description="TC14 - Connexion invalide" finished-at="2026-11-10T13:20:22 CET" duration-ms="23724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc14_connexionInvalide -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.affariyet.tests.CompteTest@35e2d654]" started-at="2026-11-10T13:20:22 CET" name="tearDown" finished-at="2026-11-10T13:20:22 CET" duration-ms="133" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc14_connexionInvalide status=SUCCESS method=CompteTest.tc14_connexionInvalide()[pri:14, instance:com.affariyet.tests.CompteTest@35e2d654] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.affariyet.tests.CompteTest@35e2d654]" started-at="2026-11-10T13:20:22 CET" name="setUp" finished-at="2026-11-10T13:20:22 CET" duration-ms="800" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.affariyet.tests.CompteTest.tc15_accesInscription()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc15_accesInscription()[pri:15, instance:com.affariyet.tests.CompteTest@35e2d654]" started-at="2026-11-10T13:20:22 CET" name="tc15_accesInscription" description="TC15 - Accès à la page d&#039;inscription" finished-at="2026-11-10T13:20:50 CET" duration-ms="27141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc15_accesInscription -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.affariyet.tests.CompteTest@35e2d654]" started-at="2026-11-10T13:20:50 CET" name="tearDown" finished-at="2026-11-10T13:20:50 CET" duration-ms="107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc15_accesInscription status=SUCCESS method=CompteTest.tc15_accesInscription()[pri:15, instance:com.affariyet.tests.CompteTest@35e2d654] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.affariyet.tests.CompteTest@35e2d654]" started-at="2026-11-10T13:20:50 CET" name="setUp" finished-at="2026-11-10T13:20:50 CET" duration-ms="774" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.affariyet.tests.CompteTest.tc16_validationChampsObligatoires()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc16_validationChampsObligatoires()[pri:16, instance:com.affariyet.tests.CompteTest@35e2d654]" started-at="2026-11-10T13:20:50 CET" name="tc16_validationChampsObligatoires" description="TC16 - Validation des champs obligatoires" finished-at="2026-11-10T13:21:16 CET" duration-ms="25359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc16_validationChampsObligatoires -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.affariyet.tests.CompteTest@35e2d654]" started-at="2026-11-10T13:21:16 CET" name="tearDown" finished-at="2026-11-10T13:21:16 CET" duration-ms="149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc16_validationChampsObligatoires status=SUCCESS method=CompteTest.tc16_validationChampsObligatoires()[pri:16, instance:com.affariyet.tests.CompteTest@35e2d654] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.affariyet.tests.CompteTest -->
+    </test> <!-- TC05-TC18 Catalogue, panier, compte et informations -->
+    <test started-at="2026-11-10T13:21:59 CET" name="TC19-TC20 Pagination et tri" finished-at="2026-11-10T13:22:53 CET" duration-ms="54300">
+      <class name="com.affariyet.tests.RechercheTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.affariyet.tests.RechercheTest@4f83df68]" started-at="2026-11-10T13:21:59 CET" name="setUp" finished-at="2026-11-10T13:22:00 CET" duration-ms="853" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.affariyet.tests.RechercheTest.tc19_navigationEntrePagesProduits()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc19_navigationEntrePagesProduits()[pri:19, instance:com.affariyet.tests.RechercheTest@4f83df68]" started-at="2026-11-10T13:22:00 CET" name="tc19_navigationEntrePagesProduits" description="TC19 - Navigation entre les pages de produits (pagination)" finished-at="2026-11-10T13:22:25 CET" duration-ms="24585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc19_navigationEntrePagesProduits -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.affariyet.tests.RechercheTest@4f83df68]" started-at="2026-11-10T13:22:25 CET" name="tearDown" finished-at="2026-11-10T13:22:25 CET" duration-ms="132" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc19_navigationEntrePagesProduits status=SUCCESS method=RechercheTest.tc19_navigationEntrePagesProduits()[pri:19, instance:com.affariyet.tests.RechercheTest@4f83df68] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.affariyet.tests.RechercheTest@4f83df68]" started-at="2026-11-10T13:22:25 CET" name="setUp" finished-at="2026-11-10T13:22:25 CET" duration-ms="804" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.affariyet.tests.RechercheTest.tc20_triParPrixCroissant()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc20_triParPrixCroissant()[pri:20, instance:com.affariyet.tests.RechercheTest@4f83df68]" started-at="2026-11-10T13:22:25 CET" name="tc20_triParPrixCroissant" description="TC20 - Fonctionnalité supplémentaire : tri par prix croissant" finished-at="2026-11-10T13:22:53 CET" duration-ms="27510" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for url to contain "order=product.price.asc". Current url: "https://www.affariyet.com/recherche?controller=search&s=samsung" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55583}, goog:processID: 27932, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55583/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ac055a45dacc0d8ede6942a95ec7cec]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "order=product.price.asc". Current url: "https://www.affariyet.com/recherche?controller=search&s=samsung" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55583}, goog:processID: 27932, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55583/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ac055a45dacc0d8ede6942a95ec7cec
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.affariyet.utils.WaitUtils.urlContains(WaitUtils.java:58)
+at com.affariyet.pages.ProductListPage.sortByPriceAscending(ProductListPage.java:101)
+at com.affariyet.tests.RechercheTest.tc20_triParPrixCroissant(RechercheTest.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc20_triParPrixCroissant -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.affariyet.tests.RechercheTest@4f83df68]" started-at="2026-11-10T13:22:53 CET" name="tearDown" finished-at="2026-11-10T13:22:53 CET" duration-ms="408" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc20_triParPrixCroissant status=FAILURE method=RechercheTest.tc20_triParPrixCroissant()[pri:20, instance:com.affariyet.tests.RechercheTest@4f83df68] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.affariyet.tests.RechercheTest -->
+    </test> <!-- TC19-TC20 Pagination et tri -->
+  </suite> <!-- Affariyet Test Suite -->
+</testng-results>

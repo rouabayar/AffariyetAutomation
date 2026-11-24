@@ -1,0 +1,206 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.affariyet:AffariyetAutomation >------------------
+[INFO] Building Affariyet Functional Tests 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ AffariyetAutomation ---
+[INFO] Deleting D:\D\3eme_cycle\devops\AffariyetAutomation\demo\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ AffariyetAutomation ---
+[INFO] skip non existing resourceDirectory D:\D\3eme_cycle\devops\AffariyetAutomation\demo\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ AffariyetAutomation ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 22 source files with javac [debug release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ AffariyetAutomation ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ AffariyetAutomation ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 13 source files with javac [debug release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ AffariyetAutomation ---
+[INFO] Using auto detected provider org.apache.maven.surefire.testng.TestNGProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+13:56:26 [INFO ] ==== TC01 - Accès à la page d'accueil ====
+13:56:26 [INFO ] Note : avertissements « CDP / DevTools » de Selenium 4.27 filtrés (Chrome plus récent que Selenium, fonctionnalité non utilisée par le projet). Réactivation : -Dselenium.cdp.avertissements=true
+13:56:30 [ETAPE] [TC01] Ouverture de https://www.affariyet.com/
+13:56:36 [INFO ] [TC01] RÉUSSI (5,5 s)
+13:56:36 [INFO ] ==== TC02 - Vérification du titre de la page d'accueil ====
+13:56:37 [ETAPE] [TC02] Ouverture de https://www.affariyet.com/
+13:56:41 [INFO ] [TC02] Titre de la page : Affariyet.com : Vente en Ligne Tunisie |smartphone, Informatique, Electroménager
+13:56:41 [INFO ] [TC02] RÉUSSI (3,6 s)
+13:56:41 [INFO ] ==== TC03 - Recherche d'un produit existant ====
+13:56:43 [ETAPE] [TC03] Ouverture de https://www.affariyet.com/
+13:56:48 [ETAPE] [TC03] Recherche du mot-clé : samsung
+13:56:52 [INFO ] [TC03] Nombre de produits annoncé : 205
+13:56:52 [INFO ] [TC03] RÉUSSI (9,7 s)
+13:56:53 [INFO ] ==== TC04 - Recherche d'un produit inexistant ====
+13:56:54 [ETAPE] [TC04] Ouverture de https://www.affariyet.com/
+13:56:59 [ETAPE] [TC04] Recherche du mot-clé : zzqxwproduitinexistant
+13:57:02 [INFO ] [TC04] RÉUSSI (7,7 s)
+13:57:02 [INFO ] ==== TC05 - Navigation entre catégories ====
+13:57:04 [ETAPE] [TC05] Ouverture de https://www.affariyet.com/
+13:57:08 [ETAPE] [TC05] Clic sur la catégorie « Réfrigérateurs » dans le pied de page
+13:57:15 [ETAPE] [TC05] Clic sur la catégorie « Lave Linge » dans le pied de page
+13:57:19 [INFO ] [TC05] RÉUSSI (15,3 s)
+13:57:19 [INFO ] ==== TC06 - Consultation d'un produit ====
+13:57:21 [ETAPE] [TC06] Ouverture de https://www.affariyet.com/
+13:57:25 [ETAPE] [TC06] Recherche du mot-clé : samsung
+13:57:28 [ETAPE] [TC06] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+13:57:31 [INFO ] [TC06] RÉUSSI (10,6 s)
+13:57:32 [INFO ] ==== TC07 - Vérification du prix d'un produit ====
+13:57:33 [ETAPE] [TC07] Ouverture de https://www.affariyet.com/
+13:57:37 [ETAPE] [TC07] Recherche du mot-clé : samsung
+13:57:42 [ETAPE] [TC07] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+13:57:46 [INFO ] [TC07] Prix liste = 2 369,000 TND | prix fiche = 2 369,000 TND
+13:57:46 [INFO ] [TC07] RÉUSSI (12,6 s)
+13:57:46 [INFO ] ==== TC08 - Ajout d'un produit au panier ====
+13:57:47 [ETAPE] [TC08] Ouverture de https://www.affariyet.com/
+13:57:53 [ETAPE] [TC08] Recherche du mot-clé : samsung
+13:57:57 [ETAPE] [TC08] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+13:58:00 [ETAPE] [TC08] Clic sur « Ajouter au panier »
+13:58:02 [INFO ] [TC08] Compteur du panier = 1
+13:58:02 [INFO ] [TC08] RÉUSSI (14,5 s)
+13:58:02 [INFO ] ==== TC09 - Vérification du contenu du panier ====
+13:58:04 [ETAPE] [TC09] Ouverture de https://www.affariyet.com/
+13:58:09 [ETAPE] [TC09] Recherche du mot-clé : samsung
+13:58:13 [ETAPE] [TC09] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+13:58:17 [ETAPE] [TC09] Clic sur « Ajouter au panier »
+13:58:18 [INFO ] [TC09] Compteur du panier = 1
+13:58:18 [ETAPE] [TC09] Ouverture de https://www.affariyet.com/panier?action=show
+13:58:22 [INFO ] [TC09] RÉUSSI (17,3 s)
+13:58:22 [INFO ] ==== TC10 - Modification de la quantité ====
+13:58:23 [ETAPE] [TC10] Ouverture de https://www.affariyet.com/
+13:58:27 [ETAPE] [TC10] Recherche du mot-clé : samsung
+13:58:30 [ETAPE] [TC10] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+13:58:35 [ETAPE] [TC10] Clic sur « + » (quantité actuelle : 1)
+13:58:36 [ETAPE] [TC10] Clic sur « Ajouter au panier »
+13:58:37 [INFO ] [TC10] Compteur du panier = 2
+13:58:38 [INFO ] [TC10] RÉUSSI (14,2 s)
+13:58:38 [INFO ] ==== TC11 - Suppression d'un produit du panier ====
+13:58:39 [ETAPE] [TC11] Ouverture de https://www.affariyet.com/
+13:58:43 [ETAPE] [TC11] Recherche du mot-clé : samsung
+13:58:48 [ETAPE] [TC11] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+13:58:51 [ETAPE] [TC11] Clic sur « Ajouter au panier »
+13:58:53 [INFO ] [TC11] Compteur du panier = 1
+13:58:53 [ETAPE] [TC11] Ouverture de https://www.affariyet.com/panier?action=show
+13:58:56 [ETAPE] [TC11] Suppression de la première ligne du panier
+13:58:58 [INFO ] [TC11] RÉUSSI (18,6 s)
+13:58:58 [INFO ] ==== TC12 - Vérification du panier vide ====
+13:58:59 [ETAPE] [TC12] Ouverture de https://www.affariyet.com/
+13:59:03 [ETAPE] [TC12] Ouverture de https://www.affariyet.com/panier?action=show
+13:59:06 [INFO ] [TC12] RÉUSSI (6,5 s)
+13:59:06 [INFO ] ==== TC13 - Connexion valide ====
+13:59:08 [INFO ] [TC13] IGNORÉ — Identifiants absents : définir AFFARIYET_EMAIL et AFFARIYET_PASSWORD (compte de test personnel) pour exécuter ce test
+13:59:08 [INFO ] ==== TC14 - Connexion invalide ====
+13:59:09 [ETAPE] [TC14] Ouverture de https://www.affariyet.com/
+13:59:15 [ETAPE] [TC14] Clic sur « Connexion » dans l'en-tête
+13:59:18 [ETAPE] [TC14] Connexion avec l'e-mail : c***@example.com
+13:59:22 [INFO ] [TC14] RÉUSSI (12,6 s)
+13:59:22 [INFO ] ==== TC15 - Accès à la page d'inscription ====
+13:59:23 [ETAPE] [TC15] Ouverture de https://www.affariyet.com/
+13:59:26 [ETAPE] [TC15] Clic sur « Connexion » dans l'en-tête
+13:59:29 [ETAPE] [TC15] Clic sur « Pas de compte ? Créez-en un »
+13:59:32 [INFO ] [TC15] RÉUSSI (9,9 s)
+13:59:33 [INFO ] ==== TC16 - Validation des champs obligatoires ====
+13:59:33 [ETAPE] [TC16] Ouverture de https://www.affariyet.com/
+13:59:38 [ETAPE] [TC16] Clic sur « Connexion » dans l'en-tête
+13:59:41 [ETAPE] [TC16] Clic sur « Connexion » avec des champs vides
+13:59:41 [INFO ] [TC16] Message de validation du navigateur : Veuillez renseigner ce champ.
+13:59:41 [ETAPE] [TC16] Clic sur « Pas de compte ? Créez-en un »
+13:59:44 [INFO ] [TC16] Champs obligatoires de l'inscription : [customer_firstname, customer_lastname, customer_email]
+13:59:44 [INFO ] [TC16] RÉUSSI (10,1 s)
+13:59:44 [INFO ] ==== TC17 - Consultation des informations de livraison ====
+13:59:44 [ETAPE] [TC17] Ouverture de https://www.affariyet.com/
+13:59:48 [ETAPE] [TC17] Clic sur « Livraison » dans le pied de page
+13:59:51 [INFO ] [TC17] RÉUSSI (6,8 s)
+13:59:51 [INFO ] ==== TC18 - Consultation de la page contact ====
+13:59:52 [ETAPE] [TC18] Ouverture de https://www.affariyet.com/
+13:59:56 [ETAPE] [TC18] Clic sur « CONTACT » dans le menu
+13:59:59 [ETAPE] [TC18] Remplissage du formulaire de contact (sans envoi)
+14:00:00 [ETAPE] [TC18] Cochage de la case de consentement
+14:00:00 [INFO ] [TC18] Mention lue pour « Document joint » : "Optional"
+14:00:00 [INFO ] [TC18] Libellés et mentions lus dans le formulaire : [Sujet, Adresse e-mail, Document joint, Message, Optional]
+14:00:00 [INFO ] [TC18] Texte de consentement lu : "Enim quis fugiat consequat elit minim nisi eu occaecat occaecat deserunt aliquip nisi ex deserunt."
+14:00:00 [ERREUR] [TC18] ÉCHOUÉ (7,7 s) — [Langue] Libellé non français dans le formulaire de contact : "Optional" (champ Document joint) ; [Consentement] Texte de remplissage (Lorem Ipsum) : "Enim quis fugiat consequat elit minim nisi eu occaecat occaecat deserunt aliquip nisi ex deserunt." — mots détectés : [fugiat, consequat, occaecat, deserunt, aliquip]
+14:00:00 [INFO ] [TC18] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc18_pageContact_20261110_140000.png
+14:00:00 [INFO ] ==== TC19 - Navigation entre les pages de produits (pagination) ====
+14:00:01 [ETAPE] [TC19] Ouverture de https://www.affariyet.com/
+14:00:06 [ETAPE] [TC19] Recherche du mot-clé : samsung
+14:00:11 [ETAPE] [TC19] Clic sur « Suivant » (pagination)
+14:00:12 [INFO ] [TC19] Pagination page 2 : Affichage 17-32 de 205 article(s) navigate_beforePRÉCÉDENT 1 2 3 … 13 SUIVANTnavigate_next
+14:00:13 [INFO ] [TC19] RÉUSSI (11,5 s)
+14:00:13 [INFO ] ==== TC20 - Fonctionnalité supplémentaire : tri par prix croissant ====
+14:00:13 [ETAPE] [TC20] Ouverture de https://www.affariyet.com/
+14:00:18 [ETAPE] [TC20] Recherche du mot-clé : samsung
+14:00:24 [ETAPE] [TC20] Tri par prix croissant
+14:00:44 [ERREUR] [TC20] ÉCHOUÉ (30,3 s) — TimeoutException : Expected condition failed: waiting for url to contain "order=product.price.asc". Current url: "https://www.affariyet.com/recherche?controller=search&s=samsung" (tried for 20 second(s) with 500 milliseconds interval)
+14:00:44 [INFO ] [TC20] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc20_triParPrixCroissant_20261110_140044.png
+14:00:44 [INFO ] ====================================================================================================
+14:00:44 [INFO ] BILAN GLOBAL : 20 tests — 17 réussi(s), 2 échoué(s), 1 ignoré(s) — 0 avertissement(s) (non comptés comme échecs) — durée cumulée 224,9 s, durée totale 258,0 s
+14:00:44 [INFO ]   ÉCHOUÉ : TC18 - Consultation de la page contact — [Langue] Libellé non français dans le formulaire de contact : "Optional" (champ Document joint) ; [Consentement] Texte de remplissage (Lorem Ipsum) : "Enim quis fugiat consequat elit minim nisi eu occaecat occaecat deserunt aliquip nisi ex deserunt." — mots détectés : [fugiat, consequat, occaecat, deserunt, aliquip]
+14:00:44 [INFO ]   ÉCHOUÉ : TC20 - Fonctionnalité supplémentaire : tri par prix croissant — TimeoutException : Expected condition failed: waiting for url to contain "order=product.price.asc". Current url: "https://www.affariyet.com/recherche?controller=search&s=samsung" (tried for 20 second(s) with 500 milliseconds interval)
+14:00:44 [INFO ]   IGNORÉ : TC13 - Connexion valide — Identifiants absents : définir AFFARIYET_EMAIL et AFFARIYET_PASSWORD (compte de test personnel) pour exécuter ce test
+14:00:44 [INFO ]   Rapports : reports\rapport-execution.html · test-output\index.html · reports\logs\execution.log
+14:00:44 [INFO ] ====================================================================================================
+14:00:44 [INFO ] Rapport HTML généré : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\reports\rapport-execution.html
+[ERROR] Tests run: 20, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 258.7 s <<< FAILURE! -- in TestSuite
+[ERROR] com.affariyet.tests.PagesInformationTest.tc18_pageContact -- Time elapsed: 7.686 s <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	[Langue] Libellé non français dans le formulaire de contact : "Optional" (champ Document joint) expected [true] but found [false],
+	[Consentement] Texte de remplissage (Lorem Ipsum) : "Enim quis fugiat consequat elit minim nisi eu occaecat occaecat deserunt aliquip nisi ex deserunt." — mots détectés : [fugiat, consequat, occaecat, deserunt, aliquip] expected [true] but found [false]
+	at com.affariyet.tests.PagesInformationTest.tc18_pageContact(PagesInformationTest.java:76)
+
+[ERROR] com.affariyet.tests.RechercheTest.tc20_triParPrixCroissant -- Time elapsed: 30.28 s <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for url to contain "order=product.price.asc". Current url: "https://www.affariyet.com/recherche?controller=search&s=samsung" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60807}, goog:processID: 17168, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60807/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f72fbde38cfbbacfd3fb6228d6fd9961
+	at com.affariyet.tests.RechercheTest.tc20_triParPrixCroissant(RechercheTest.java:65)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   PagesInformationTest.tc18_pageContact:76 The following asserts failed:
+	[Langue] Libellé non français dans le formulaire de contact : "Optional" (champ Document joint) expected [true] but found [false],
+	[Consentement] Texte de remplissage (Lorem Ipsum) : "Enim quis fugiat consequat elit minim nisi eu occaecat occaecat deserunt aliquip nisi ex deserunt." — mots détectés : [fugiat, consequat, occaecat, deserunt, aliquip] expected [true] but found [false]
+[ERROR]   RechercheTest.tc20_triParPrixCroissant:65 » Timeout Expected condition failed: waiting for url to contain "order=product.price.asc". Current url: "https://www.affariyet.com/recherche?controller=search&s=samsung" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60807}, goog:processID: 17168, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60807/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f72fbde38cfbbacfd3fb6228d6fd9961
+[INFO] 
+[ERROR] Tests run: 20, Failures: 2, Errors: 0, Skipped: 1
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:23 min
+[INFO] Finished at: 2026-11-10T14:00:45+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.2.5:test (default-test) on project AffariyetAutomation: There are test failures.
+[ERROR] 
+[ERROR] Please refer to D:\D\3eme_cycle\devops\AffariyetAutomation\demo\test-output for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Code de sortie Maven : 1 (BUILD FAILURE : voir le bilan ci-dessus et reports\rapport-execution.html)

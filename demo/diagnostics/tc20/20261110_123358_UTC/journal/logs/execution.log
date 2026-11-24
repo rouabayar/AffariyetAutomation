@@ -1,0 +1,2 @@
+2026-11-10 13:34:02 [INFO ] Note : avertissements « CDP / DevTools » de Selenium 4.27 filtrés (Chrome plus récent que Selenium, fonctionnalité non utilisée par le projet). Réactivation : -Dselenium.cdp.avertissements=true
+2026-11-10 13:34:03 [DETAIL] 14 données de test chargées depuis test-data/testdata.csv

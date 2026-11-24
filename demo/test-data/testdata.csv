@@ -1,0 +1,15 @@
+cle;valeur;utilisation
+recherche.existante;samsung;TC03 TC06 TC07 TC08 TC09 TC10 TC11 TC19 TC20 - mot-clé avec résultats
+recherche.inexistante;zzqxwproduitinexistant;TC04 - mot-clé sans aucun résultat
+categorie.1;Réfrigérateurs;TC05 - première catégorie (lien du pied de page)
+categorie.2;Lave Linge;TC05 - seconde catégorie (lien du pied de page)
+quantite.cible;2;TC10 - quantité après un clic sur +
+login.invalide.email;compte.inexistant@example.com;TC14 - e-mail FICTIF (domaine réservé example.com)
+login.invalide.motdepasse;MotDePasseFaux123;TC14 - mot de passe FICTIF
+login.erreur.attendue;Échec d'authentification;TC14 - message d'erreur attendu
+contact.email;testeur.automatique@example.com;TC18 - e-mail FICTIF (le message n'est jamais envoyé)
+contact.message;Message de test automatisé - ne pas traiter;TC18 - texte saisi puis non envoyé
+livraison.texte.1;Frais de livraison;TC17 - texte attendu sur la page Livraison
+livraison.texte.2;Délais de livraison;TC17 - texte attendu sur la page Livraison
+panier.vide.message;Il n'y a plus d'articles dans votre panier;TC11 TC12 - message du panier vide
+recherche.vide.message;Aucun produit ne correspond à votre recherche;TC04 - message attendu

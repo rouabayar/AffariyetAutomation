@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Affariyet Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.affariyet.listeners.TestListener"/>
+    <listener class-name="com.affariyet.listeners.HtmlReportGenerator"/>
+  </listeners>
+  <test thread-count="5" name="TC05-TC18 Catalogue, panier, compte et informations(failed)" verbose="0">
+    <classes>
+      <class name="com.affariyet.tests.CompteTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tc13_connexionValide"/>
+        </methods>
+      </class> <!-- com.affariyet.tests.CompteTest -->
+    </classes>
+  </test> <!-- TC05-TC18 Catalogue, panier, compte et informations(failed) -->
+  <test thread-count="5" name="TC19-TC20 Pagination et tri(failed)" verbose="0">
+    <classes>
+      <class name="com.affariyet.tests.RechercheTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tc20_triParPrixCroissant"/>
+        </methods>
+      </class> <!-- com.affariyet.tests.RechercheTest -->
+    </classes>
+  </test> <!-- TC19-TC20 Pagination et tri(failed) -->
+</suite> <!-- Failed suite [Affariyet Test Suite] -->

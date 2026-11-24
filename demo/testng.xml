@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+  Suite des 20 tests fonctionnels Affariyet.
+
+  Ordre d'exécution TC01 → TC20 :
+  avec TestNG 7, l'attribut « priority » n'ordonne les méthodes qu'À L'INTÉRIEUR d'une classe,
+  et les classes s'exécutent dans l'ordre où elles sont listées (preserve-order="true" par défaut).
+  RechercheTest contient TC03, TC04, TC19 et TC20 : la suite est donc découpée en 3 blocs <test>,
+  exécutés l'un après l'autre, chaque méthode n'étant incluse qu'une seule fois (20 tests au total).
+
+  Les outils d'inspection et de diagnostic (package tools) ne font PAS partie de la suite.
+-->
+<suite name="Affariyet Test Suite" verbose="1">
+
+    <listeners>
+        <!-- Traces console + reports/logs/execution.log + bilan global unique en fin de suite -->
+        <listener class-name="com.affariyet.listeners.TestListener"/>
+        <!-- Tableau de bord reports/rapport-execution.html + reports/resume-execution.txt -->
+        <listener class-name="com.affariyet.listeners.HtmlReportGenerator"/>
+    </listeners>
+
+    <!-- Bloc 1 : TC01 à TC04 -->
+    <test name="TC01-TC04 Accueil et recherche">
+        <classes>
+            <class name="com.affariyet.tests.AccueilTest"/>          <!-- TC01-TC02 -->
+            <class name="com.affariyet.tests.RechercheTest">         <!-- TC03-TC04 -->
+                <methods>
+                    <include name="tc03_rechercheProduitExistant"/>
+                    <include name="tc04_rechercheProduitInexistant"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Bloc 2 : TC05 à TC18 -->
+    <test name="TC05-TC18 Catalogue, panier, compte et informations">
+        <classes>
+            <class name="com.affariyet.tests.CatalogueTest"/>        <!-- TC05-TC07 -->
+            <class name="com.affariyet.tests.PanierTest"/>           <!-- TC08-TC12 -->
+            <class name="com.affariyet.tests.CompteTest"/>           <!-- TC13-TC16 -->
+            <class name="com.affariyet.tests.PagesInformationTest"/> <!-- TC17-TC18 -->
+        </classes>
+    </test>
+
+    <!-- Bloc 3 : TC19 et TC20 -->
+    <test name="TC19-TC20 Pagination et tri">
+        <classes>
+            <class name="com.affariyet.tests.RechercheTest">         <!-- TC19-TC20 -->
+                <methods>
+                    <include name="tc19_navigationEntrePagesProduits"/>
+                    <include name="tc20_triParPrixCroissant"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

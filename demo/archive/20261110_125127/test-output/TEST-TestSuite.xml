@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="276.842" tests="20" errors="0" skipped="1" failures="2">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\D\3eme_cycle\devops\AffariyetAutomation\demo\target\test-classes;D:\D\3eme_cycle\devops\AffariyetAutomation\demo\target\classes;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-java\4.27.0\selenium-java-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-api\4.27.0\selenium-api-4.27.0.jar;C:\Users\user\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.27.0\selenium-chrome-driver-4.27.0.jar;C:\Users\user\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.27.0\selenium-chromium-driver-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-json\4.27.0\selenium-json-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.27.0\selenium-manager-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.27.0\selenium-devtools-v129-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v130\4.27.0\selenium-devtools-v130-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v131\4.27.0\selenium-devtools-v131-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.27.0\selenium-devtools-v85-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.27.0\selenium-edge-driver-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.27.0\selenium-firefox-driver-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-http\4.27.0\selenium-http-4.27.0.jar;C:\Users\user\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.27.0\selenium-ie-driver-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.27.0\selenium-remote-driver-4.27.0.jar;C:\Users\user\.m2\repository\com\google\guava\guava\33.3.1-jre\guava-33.3.1-jre.jar;C:\Users\user\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\user\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\user\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\user\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\user\.m2\repository\com\google\errorprone\error_prone_annotations\2.28.0\error_prone_annotations-2.28.0.jar;C:\Users\user\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-api\1.44.1\opentelemetry-api-1.44.1.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-context\1.44.1\opentelemetry-context-1.44.1.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.44.1\opentelemetry-exporter-logging-1.44.1.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.44.1\opentelemetry-sdk-common-1.44.1.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.44.1\opentelemetry-sdk-extension-autoconfigure-spi-1.44.1.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.44.1\opentelemetry-sdk-extension-autoconfigure-1.44.1.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.44.1-alpha\opentelemetry-api-incubator-1.44.1-alpha.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.44.1\opentelemetry-sdk-trace-1.44.1.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.44.1\opentelemetry-sdk-1.44.1.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.44.1\opentelemetry-sdk-metrics-1.44.1.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.44.1\opentelemetry-sdk-logs-1.44.1.jar;C:\Users\user\.m2\repository\net\bytebuddy\byte-buddy\1.15.10\byte-buddy-1.15.10.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-os\4.27.0\selenium-os-4.27.0.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.27.0\selenium-safari-driver-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-support\4.27.0\selenium-support-4.27.0.jar;C:\Users\user\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\user\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\user\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\user\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Africa/Tunis"/>
+    <property name="user.country.format" value="TN"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.20.1+1\bin"/>
+    <property name="sun.java.command" value="C:\Users\user\AppData\Local\Temp\surefire17997213245541847026\surefirebooter-20261110121608080_3.jar C:\Users\user\AppData\Local\Temp\surefire17997213245541847026 2026-11-10T12-16-07_923-jvmRun1 surefire-20261110121608080_1tmp surefire_0-20261110121608080_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\D\3eme_cycle\devops\AffariyetAutomation\demo\target\test-classes;D:\D\3eme_cycle\devops\AffariyetAutomation\demo\target\classes;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-java\4.27.0\selenium-java-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-api\4.27.0\selenium-api-4.27.0.jar;C:\Users\user\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.27.0\selenium-chrome-driver-4.27.0.jar;C:\Users\user\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.27.0\selenium-chromium-driver-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-json\4.27.0\selenium-json-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.27.0\selenium-manager-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.27.0\selenium-devtools-v129-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v130\4.27.0\selenium-devtools-v130-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v131\4.27.0\selenium-devtools-v131-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.27.0\selenium-devtools-v85-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.27.0\selenium-edge-driver-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.27.0\selenium-firefox-driver-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-http\4.27.0\selenium-http-4.27.0.jar;C:\Users\user\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.27.0\selenium-ie-driver-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.27.0\selenium-remote-driver-4.27.0.jar;C:\Users\user\.m2\repository\com\google\guava\guava\33.3.1-jre\guava-33.3.1-jre.jar;C:\Users\user\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\user\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\user\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\user\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\user\.m2\repository\com\google\errorprone\error_prone_annotations\2.28.0\error_prone_annotations-2.28.0.jar;C:\Users\user\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-api\1.44.1\opentelemetry-api-1.44.1.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-context\1.44.1\opentelemetry-context-1.44.1.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.44.1\opentelemetry-exporter-logging-1.44.1.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.44.1\opentelemetry-sdk-common-1.44.1.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.44.1\opentelemetry-sdk-extension-autoconfigure-spi-1.44.1.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.44.1\opentelemetry-sdk-extension-autoconfigure-1.44.1.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.44.1-alpha\opentelemetry-api-incubator-1.44.1-alpha.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.44.1\opentelemetry-sdk-trace-1.44.1.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.44.1\opentelemetry-sdk-1.44.1.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.44.1\opentelemetry-sdk-metrics-1.44.1.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.44.1\opentelemetry-sdk-logs-1.44.1.jar;C:\Users\user\.m2\repository\net\bytebuddy\byte-buddy\1.15.10\byte-buddy-1.15.10.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-os\4.27.0\selenium-os-4.27.0.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.27.0\selenium-safari-driver-4.27.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-support\4.27.0\selenium-support-4.27.0.jar;C:\Users\user\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\user\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\user\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\user\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\user"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-08-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.20.1+1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\D\3eme_cycle\devops\AffariyetAutomation\demo"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\user\AppData\Local\Temp\surefire17997213245541847026\surefirebooter-20261110121608080_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.20.1+1"/>
+    <property name="user.name" value="user"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.20.1+1"/>
+    <property name="localRepository" value="C:\Users\user\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\user\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.20.1"/>
+    <property name="user.dir" value="D:\D\3eme_cycle\devops\AffariyetAutomation\demo"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.20.1+1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Microsoft MPI\Bin\;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Users\user\Downloads\Compressed\WINDOWS.X64_193000_db_home\bin;D:\WINDOWS.X64_193000_db_home\bin;C:\Users\user\Downloads\Programs\WINDOWS.X64_193000_db_home\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Python27;C:\Python27\Tools\Scripts;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Wondershare\Wondershare DemoCreator;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\180\Tools\Binn\;C:\Program Files\Microsoft SQL Server\170\DTS\Binn\;C:\Program Files\mosquitto;C:\Program Files\Java\jdk-17.0.20.1+1\bin;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Program Files\WSL\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Users\user\AppData\Local\Programs\Python\Launcher\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\Python27\python.exe;C:\Program Files\Azure Data Studio\bin;D:\D\FAC\3me\TP Mobile\Tools Mobile\Tools\flutter\bin;C:\Users\user\Infineon\LauncherService;C:\maven\apache-maven-3.9.11\bin;C:\Users\user\AppData\Roaming\npm;D:\D\2eme cycle sem2\mobile\projet_mobile\flutter\bin;C:\Users\user\.dotnet\tools;C:\Users\user\AppData\Local\Programs\Ollama;C:\Users\user\AppData\Local\Programs\Ollama;;c:\Users\user\.vscode\extensions\vscjava.vscode-java-debug-0.60.0\bundled\scripts\noConfigScripts;c:\Users\user\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin\copilot-shim;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.20.1+1"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="tc01_accesPageAccueil" classname="com.affariyet.tests.AccueilTest" time="5.472">
+    <system-out><![CDATA[2026-11-10 12:16:08 [INFO ] ========== DÉBUT : tc01_accesPageAccueil ==========
+2026-11-10 12:16:10 [INFO ] Navigateur démarré : chrome
+2026-11-10 12:16:10 [INFO ] >> DÉMARRAGE : TC01 - Accès à la page d'accueil
+2026-11-10 12:16:10 [ETAPE] Ouverture de https://www.affariyet.com/
+2026-11-10 12:16:15 [INFO ] [RÉUSSI] TC01 - Accès à la page d'accueil (5,5 s)
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+nov. 10, 2026 12:16:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 156
+nov. 10, 2026 12:16:10 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc02_verificationTitre" classname="com.affariyet.tests.AccueilTest" time="4.68">
+    <system-out><![CDATA[2026-11-10 12:16:15 [INFO ] Navigateur fermé
+2026-11-10 12:16:15 [INFO ] ========== FIN : tc01_accesPageAccueil ==========
+2026-11-10 12:16:15 [INFO ] ========== DÉBUT : tc02_verificationTitre ==========
+2026-11-10 12:16:16 [INFO ] Navigateur démarré : chrome
+2026-11-10 12:16:16 [INFO ] >> DÉMARRAGE : TC02 - Vérification du titre de la page d'accueil
+2026-11-10 12:16:16 [ETAPE] Ouverture de https://www.affariyet.com/
+2026-11-10 12:16:21 [INFO ] Titre de la page : Affariyet.com : Vente en Ligne Tunisie |smartphone, Informatique, Electroménager
+2026-11-10 12:16:21 [INFO ] [RÉUSSI] TC02 - Vérification du titre de la page d'accueil (4,7 s)
+]]></system-out>
+    <system-err><![CDATA[nov. 10, 2026 12:16:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 156
+nov. 10, 2026 12:16:16 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc03_rechercheProduitExistant" classname="com.affariyet.tests.RechercheTest" time="9.958">
+    <system-out><![CDATA[2026-11-10 12:16:21 [INFO ] Navigateur fermé
+2026-11-10 12:16:21 [INFO ] ========== FIN : tc02_verificationTitre ==========
+2026-11-10 12:16:21 [INFO ] ========== DÉBUT : tc03_rechercheProduitExistant ==========
+2026-11-10 12:16:22 [INFO ] Navigateur démarré : chrome
+2026-11-10 12:16:22 [INFO ] >> DÉMARRAGE : TC03 - Recherche d'un produit existant
+2026-11-10 12:16:22 [INFO ] 14 données de test chargées depuis test-data/testdata.csv
+2026-11-10 12:16:22 [ETAPE] Ouverture de https://www.affariyet.com/
+2026-11-10 12:16:27 [ETAPE] Recherche du mot-clé : samsung
+2026-11-10 12:16:32 [INFO ] Nombre de produits annoncé : 205
+2026-11-10 12:16:32 [INFO ] [RÉUSSI] TC03 - Recherche d'un produit existant (10,0 s)
+]]></system-out>
+    <system-err><![CDATA[nov. 10, 2026 12:16:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 156
+nov. 10, 2026 12:16:22 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc04_rechercheProduitInexistant" classname="com.affariyet.tests.RechercheTest" time="9.217">
+    <system-out><![CDATA[2026-11-10 12:16:32 [INFO ] Navigateur fermé
+2026-11-10 12:16:32 [INFO ] ========== FIN : tc03_rechercheProduitExistant ==========
+2026-11-10 12:16:32 [INFO ] ========== DÉBUT : tc04_rechercheProduitInexistant ==========
+2026-11-10 12:16:33 [INFO ] Navigateur démarré : chrome
+2026-11-10 12:16:33 [INFO ] >> DÉMARRAGE : TC04 - Recherche d'un produit inexistant
+2026-11-10 12:16:33 [ETAPE] Ouverture de https://www.affariyet.com/
+2026-11-10 12:16:38 [ETAPE] Recherche du mot-clé : zzqxwproduitinexistant
+2026-11-10 12:16:42 [INFO ] [RÉUSSI] TC04 - Recherche d'un produit inexistant (9,2 s)
+]]></system-out>
+    <system-err><![CDATA[nov. 10, 2026 12:16:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 156
+nov. 10, 2026 12:16:33 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc19_navigationEntrePagesProduits" classname="com.affariyet.tests.RechercheTest" time="12.201">
+    <system-out><![CDATA[2026-11-10 12:16:42 [INFO ] Navigateur fermé
+2026-11-10 12:16:42 [INFO ] ========== FIN : tc04_rechercheProduitInexistant ==========
+2026-11-10 12:16:42 [INFO ] ========== DÉBUT : tc19_navigationEntrePagesProduits ==========
+2026-11-10 12:16:43 [INFO ] Navigateur démarré : chrome
+2026-11-10 12:16:43 [INFO ] >> DÉMARRAGE : TC19 - Navigation entre les pages de produits (pagination)
+2026-11-10 12:16:43 [ETAPE] Ouverture de https://www.affariyet.com/
+2026-11-10 12:16:49 [ETAPE] Recherche du mot-clé : samsung
+2026-11-10 12:16:54 [ETAPE] Clic sur « Suivant » (pagination)
+2026-11-10 12:16:55 [INFO ] Pagination page 2 : Affichage 17-32 de 205 article(s) navigate_beforePRÉCÉDENT 1 2 3 … 13 SUIVANTnavigate_next
+2026-11-10 12:16:55 [INFO ] [RÉUSSI] TC19 - Navigation entre les pages de produits (pagination) (12,2 s)
+]]></system-out>
+    <system-err><![CDATA[nov. 10, 2026 12:16:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 156
+nov. 10, 2026 12:16:43 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc20_triParPrixCroissant" classname="com.affariyet.tests.RechercheTest" time="29.469">
+    <failure message="Expected condition failed: waiting for url to contain &quot;order=product.price.asc&quot;. Current url: &quot;https://www.affariyet.com/recherche?controller=search&amp;s=samsung&quot; (tried for 20 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.20.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57792}, goog:processID: 24004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57792/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c142fe83fb0bb9de30a6dad05fef573f" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for url to contain "order=product.price.asc". Current url: "https://www.affariyet.com/recherche?controller=search&s=samsung" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57792}, goog:processID: 24004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57792/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c142fe83fb0bb9de30a6dad05fef573f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.affariyet.utils.WaitUtils.urlContains(WaitUtils.java:58)
+	at com.affariyet.pages.ProductListPage.sortByPriceAscending(ProductListPage.java:101)
+	at com.affariyet.tests.RechercheTest.tc20_triParPrixCroissant(RechercheTest.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[2026-11-10 12:16:55 [INFO ] Navigateur fermé
+2026-11-10 12:16:55 [INFO ] ========== FIN : tc19_navigationEntrePagesProduits ==========
+2026-11-10 12:16:55 [INFO ] ========== DÉBUT : tc20_triParPrixCroissant ==========
+2026-11-10 12:16:56 [INFO ] Navigateur démarré : chrome
+2026-11-10 12:16:56 [INFO ] >> DÉMARRAGE : TC20 - Fonctionnalité supplémentaire : tri par prix croissant
+2026-11-10 12:16:56 [ETAPE] Ouverture de https://www.affariyet.com/
+2026-11-10 12:17:01 [ETAPE] Recherche du mot-clé : samsung
+2026-11-10 12:17:05 [ETAPE] Tri par prix croissant
+2026-11-10 12:17:26 [ERREUR] [ÉCHOUÉ] TC20 - Fonctionnalité supplémentaire : tri par prix croissant (29,5 s)
+2026-11-10 12:17:26 [ERREUR]    Cause : org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "order=product.price.asc". Current url: "https://www.affariyet.com/recherche?controller=search&s=samsung" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57792}, goog:processID: 24004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57792/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c142fe83fb0bb9de30a6dad05fef573f
+]]></system-out>
+    <system-err><![CDATA[nov. 10, 2026 12:16:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 156
+nov. 10, 2026 12:16:56 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc05_navigationEntreCategories" classname="com.affariyet.tests.CatalogueTest" time="15.422">
+    <system-out><![CDATA[2026-11-10 12:17:26 [INFO ] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc20_triParPrixCroissant_20261110_121726.png
+2026-11-10 12:17:26 [INFO ] Navigateur fermé
+2026-11-10 12:17:26 [INFO ] ========== FIN : tc20_triParPrixCroissant ==========
+2026-11-10 12:17:26 [INFO ] ========== DÉBUT : tc05_navigationEntreCategories ==========
+2026-11-10 12:17:27 [INFO ] Navigateur démarré : chrome
+2026-11-10 12:17:27 [INFO ] >> DÉMARRAGE : TC05 - Navigation entre catégories
+2026-11-10 12:17:27 [ETAPE] Ouverture de https://www.affariyet.com/
+2026-11-10 12:17:32 [ETAPE] Clic sur la catégorie « Réfrigérateurs » dans le pied de page
+2026-11-10 12:17:38 [ETAPE] Clic sur la catégorie « Lave Linge » dans le pied de page
+2026-11-10 12:17:42 [INFO ] [RÉUSSI] TC05 - Navigation entre catégories (15,4 s)
+]]></system-out>
+    <system-err><![CDATA[nov. 10, 2026 12:17:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 156
+nov. 10, 2026 12:17:27 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc06_consultationProduit" classname="com.affariyet.tests.CatalogueTest" time="17.445">
+    <system-out><![CDATA[2026-11-10 12:17:43 [INFO ] Navigateur fermé
+2026-11-10 12:17:43 [INFO ] ========== FIN : tc05_navigationEntreCategories ==========
+2026-11-10 12:17:43 [INFO ] ========== DÉBUT : tc06_consultationProduit ==========
+2026-11-10 12:17:43 [INFO ] Navigateur démarré : chrome
+2026-11-10 12:17:43 [INFO ] >> DÉMARRAGE : TC06 - Consultation d'un produit
+2026-11-10 12:17:43 [ETAPE] Ouverture de https://www.affariyet.com/
+2026-11-10 12:17:52 [ETAPE] Recherche du mot-clé : samsung
+2026-11-10 12:17:58 [ETAPE] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+2026-11-10 12:18:01 [INFO ] [RÉUSSI] TC06 - Consultation d'un produit (17,4 s)
+]]></system-out>
+    <system-err><![CDATA[nov. 10, 2026 12:17:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 156
+nov. 10, 2026 12:17:43 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc07_verificationPrix" classname="com.affariyet.tests.CatalogueTest" time="11.463">
+    <system-out><![CDATA[2026-11-10 12:18:01 [INFO ] Navigateur fermé
+2026-11-10 12:18:01 [INFO ] ========== FIN : tc06_consultationProduit ==========
+2026-11-10 12:18:01 [INFO ] ========== DÉBUT : tc07_verificationPrix ==========
+2026-11-10 12:18:02 [INFO ] Navigateur démarré : chrome
+2026-11-10 12:18:02 [INFO ] >> DÉMARRAGE : TC07 - Vérification du prix d'un produit
+2026-11-10 12:18:02 [ETAPE] Ouverture de https://www.affariyet.com/
+2026-11-10 12:18:06 [ETAPE] Recherche du mot-clé : samsung
+2026-11-10 12:18:10 [ETAPE] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+2026-11-10 12:18:13 [INFO ] Prix liste = 2 369,000 TND | prix fiche = 2 369,000 TND
+2026-11-10 12:18:13 [INFO ] [RÉUSSI] TC07 - Vérification du prix d'un produit (11,5 s)
+]]></system-out>
+    <system-err><![CDATA[nov. 10, 2026 12:18:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 156
+nov. 10, 2026 12:18:02 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc08_ajoutAuPanier" classname="com.affariyet.tests.PanierTest" time="15.469">
+    <system-out><![CDATA[2026-11-10 12:18:13 [INFO ] Navigateur fermé
+2026-11-10 12:18:13 [INFO ] ========== FIN : tc07_verificationPrix ==========
+2026-11-10 12:18:13 [INFO ] ========== DÉBUT : tc08_ajoutAuPanier ==========
+2026-11-10 12:18:14 [INFO ] Navigateur démarré : chrome
+2026-11-10 12:18:14 [INFO ] >> DÉMARRAGE : TC08 - Ajout d'un produit au panier
+2026-11-10 12:18:14 [ETAPE] Ouverture de https://www.affariyet.com/
+2026-11-10 12:18:20 [ETAPE] Recherche du mot-clé : samsung
+2026-11-10 12:18:24 [ETAPE] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+2026-11-10 12:18:28 [ETAPE] Clic sur « Ajouter au panier »
+2026-11-10 12:18:30 [INFO ] Compteur du panier = 1
+2026-11-10 12:18:30 [INFO ] [RÉUSSI] TC08 - Ajout d'un produit au panier (15,5 s)
+]]></system-out>
+    <system-err><![CDATA[nov. 10, 2026 12:18:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 156
+nov. 10, 2026 12:18:14 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc09_verificationPanier" classname="com.affariyet.tests.PanierTest" time="16.922">
+    <system-out><![CDATA[2026-11-10 12:18:30 [INFO ] Navigateur fermé
+2026-11-10 12:18:30 [INFO ] ========== FIN : tc08_ajoutAuPanier ==========
+2026-11-10 12:18:30 [INFO ] ========== DÉBUT : tc09_verificationPanier ==========
+2026-11-10 12:18:31 [INFO ] Navigateur démarré : chrome
+2026-11-10 12:18:31 [INFO ] >> DÉMARRAGE : TC09 - Vérification du contenu du panier
+2026-11-10 12:18:31 [ETAPE] Ouverture de https://www.affariyet.com/
+2026-11-10 12:18:36 [ETAPE] Recherche du mot-clé : samsung
+2026-11-10 12:18:39 [ETAPE] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+2026-11-10 12:18:43 [ETAPE] Clic sur « Ajouter au panier »
+2026-11-10 12:18:44 [INFO ] Compteur du panier = 1
+2026-11-10 12:18:44 [ETAPE] Ouverture de https://www.affariyet.com/panier?action=show
+2026-11-10 12:18:48 [INFO ] [RÉUSSI] TC09 - Vérification du contenu du panier (16,9 s)
+]]></system-out>
+    <system-err><![CDATA[nov. 10, 2026 12:18:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 156
+nov. 10, 2026 12:18:31 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc10_modificationQuantite" classname="com.affariyet.tests.PanierTest" time="13.238">
+    <system-out><![CDATA[2026-11-10 12:18:48 [INFO ] Navigateur fermé
+2026-11-10 12:18:48 [INFO ] ========== FIN : tc09_verificationPanier ==========
+2026-11-10 12:18:48 [INFO ] ========== DÉBUT : tc10_modificationQuantite ==========
+2026-11-10 12:18:49 [INFO ] Navigateur démarré : chrome
+2026-11-10 12:18:49 [INFO ] >> DÉMARRAGE : TC10 - Modification de la quantité
+2026-11-10 12:18:49 [ETAPE] Ouverture de https://www.affariyet.com/
+2026-11-10 12:18:54 [ETAPE] Recherche du mot-clé : samsung
+2026-11-10 12:18:57 [ETAPE] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+2026-11-10 12:19:00 [ETAPE] Clic sur « + » (quantité actuelle : 1)
+2026-11-10 12:19:00 [ETAPE] Clic sur « Ajouter au panier »
+2026-11-10 12:19:02 [INFO ] Compteur du panier = 2
+2026-11-10 12:19:02 [INFO ] [RÉUSSI] TC10 - Modification de la quantité (13,2 s)
+]]></system-out>
+    <system-err><![CDATA[nov. 10, 2026 12:18:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 156
+nov. 10, 2026 12:18:49 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc11_suppressionProduit" classname="com.affariyet.tests.PanierTest" time="18.271">
+    <system-out><![CDATA[2026-11-10 12:19:02 [INFO ] Navigateur fermé
+2026-11-10 12:19:02 [INFO ] ========== FIN : tc10_modificationQuantite ==========
+2026-11-10 12:19:02 [INFO ] ========== DÉBUT : tc11_suppressionProduit ==========
+2026-11-10 12:19:03 [INFO ] Navigateur démarré : chrome
+2026-11-10 12:19:03 [INFO ] >> DÉMARRAGE : TC11 - Suppression d'un produit du panier
+2026-11-10 12:19:03 [ETAPE] Ouverture de https://www.affariyet.com/
+2026-11-10 12:19:08 [ETAPE] Recherche du mot-clé : samsung
+2026-11-10 12:19:11 [ETAPE] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+2026-11-10 12:19:15 [ETAPE] Clic sur « Ajouter au panier »
+2026-11-10 12:19:17 [INFO ] Compteur du panier = 1
+2026-11-10 12:19:17 [ETAPE] Ouverture de https://www.affariyet.com/panier?action=show
+2026-11-10 12:19:20 [ETAPE] Suppression de la première ligne du panier
+2026-11-10 12:19:21 [INFO ] [RÉUSSI] TC11 - Suppression d'un produit du panier (18,3 s)
+]]></system-out>
+    <system-err><![CDATA[nov. 10, 2026 12:19:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 156
+nov. 10, 2026 12:19:03 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc12_panierVide" classname="com.affariyet.tests.PanierTest" time="8.59">
+    <system-out><![CDATA[2026-11-10 12:19:21 [INFO ] Navigateur fermé
+2026-11-10 12:19:21 [INFO ] ========== FIN : tc11_suppressionProduit ==========
+2026-11-10 12:19:21 [INFO ] ========== DÉBUT : tc12_panierVide ==========
+2026-11-10 12:19:22 [INFO ] Navigateur démarré : chrome
+2026-11-10 12:19:22 [INFO ] >> DÉMARRAGE : TC12 - Vérification du panier vide
+2026-11-10 12:19:22 [ETAPE] Ouverture de https://www.affariyet.com/
+2026-11-10 12:19:27 [ETAPE] Ouverture de https://www.affariyet.com/panier?action=show
+2026-11-10 12:19:31 [INFO ] [RÉUSSI] TC12 - Vérification du panier vide (8,6 s)
+]]></system-out>
+    <system-err><![CDATA[nov. 10, 2026 12:19:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 156
+nov. 10, 2026 12:19:22 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc13_connexionValide" classname="com.affariyet.tests.CompteTest" time="0.0">
+    <skipped message="Identifiants absents : définir AFFARIYET_EMAIL et AFFARIYET_PASSWORD (compte de test personnel) pour exécuter ce test"/>
+    <system-out><![CDATA[2026-11-10 12:19:31 [INFO ] Navigateur fermé
+2026-11-10 12:19:31 [INFO ] ========== FIN : tc12_panierVide ==========
+2026-11-10 12:19:31 [INFO ] ========== DÉBUT : tc13_connexionValide ==========
+2026-11-10 12:19:32 [INFO ] Navigateur démarré : chrome
+2026-11-10 12:19:32 [INFO ] >> DÉMARRAGE : TC13 - Connexion valide
+2026-11-10 12:19:32 [INFO ] [IGNORÉ] TC13 - Connexion valide — Identifiants absents : définir AFFARIYET_EMAIL et AFFARIYET_PASSWORD (compte de test personnel) pour exécuter ce test
+]]></system-out>
+    <system-err><![CDATA[nov. 10, 2026 12:19:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 156
+nov. 10, 2026 12:19:32 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc14_connexionInvalide" classname="com.affariyet.tests.CompteTest" time="12.269">
+    <system-out><![CDATA[2026-11-10 12:19:33 [INFO ] Navigateur fermé
+2026-11-10 12:19:33 [INFO ] ========== FIN : tc13_connexionValide ==========
+2026-11-10 12:19:33 [INFO ] ========== DÉBUT : tc14_connexionInvalide ==========
+2026-11-10 12:19:34 [INFO ] Navigateur démarré : chrome
+2026-11-10 12:19:34 [INFO ] >> DÉMARRAGE : TC14 - Connexion invalide
+2026-11-10 12:19:34 [ETAPE] Ouverture de https://www.affariyet.com/
+2026-11-10 12:19:39 [ETAPE] Clic sur « Connexion » dans l'en-tête
+2026-11-10 12:19:43 [ETAPE] Connexion avec l'e-mail : c***@example.com
+2026-11-10 12:19:46 [INFO ] [RÉUSSI] TC14 - Connexion invalide (12,3 s)
+]]></system-out>
+    <system-err><![CDATA[nov. 10, 2026 12:19:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 156
+nov. 10, 2026 12:19:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc15_accesInscription" classname="com.affariyet.tests.CompteTest" time="13.745">
+    <system-out><![CDATA[2026-11-10 12:19:47 [INFO ] Navigateur fermé
+2026-11-10 12:19:47 [INFO ] ========== FIN : tc14_connexionInvalide ==========
+2026-11-10 12:19:47 [INFO ] ========== DÉBUT : tc15_accesInscription ==========
+2026-11-10 12:19:48 [INFO ] Navigateur démarré : chrome
+2026-11-10 12:19:48 [INFO ] >> DÉMARRAGE : TC15 - Accès à la page d'inscription
+2026-11-10 12:19:48 [ETAPE] Ouverture de https://www.affariyet.com/
+2026-11-10 12:19:54 [ETAPE] Clic sur « Connexion » dans l'en-tête
+2026-11-10 12:19:58 [ETAPE] Clic sur « Pas de compte ? Créez-en un »
+2026-11-10 12:20:02 [INFO ] [RÉUSSI] TC15 - Accès à la page d'inscription (13,7 s)
+]]></system-out>
+    <system-err><![CDATA[nov. 10, 2026 12:19:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 156
+nov. 10, 2026 12:19:48 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc16_validationChampsObligatoires" classname="com.affariyet.tests.CompteTest" time="14.191">
+    <system-out><![CDATA[2026-11-10 12:20:02 [INFO ] Navigateur fermé
+2026-11-10 12:20:02 [INFO ] ========== FIN : tc15_accesInscription ==========
+2026-11-10 12:20:02 [INFO ] ========== DÉBUT : tc16_validationChampsObligatoires ==========
+2026-11-10 12:20:04 [INFO ] Navigateur démarré : chrome
+2026-11-10 12:20:04 [INFO ] >> DÉMARRAGE : TC16 - Validation des champs obligatoires
+2026-11-10 12:20:04 [ETAPE] Ouverture de https://www.affariyet.com/
+2026-11-10 12:20:09 [ETAPE] Clic sur « Connexion » dans l'en-tête
+2026-11-10 12:20:13 [ETAPE] Clic sur « Connexion » avec des champs vides
+2026-11-10 12:20:13 [INFO ] Message de validation du navigateur : Veuillez renseigner ce champ.
+2026-11-10 12:20:13 [ETAPE] Clic sur « Pas de compte ? Créez-en un »
+2026-11-10 12:20:18 [INFO ] Champs obligatoires de l'inscription : [customer_firstname, customer_lastname, customer_email]
+2026-11-10 12:20:18 [INFO ] [RÉUSSI] TC16 - Validation des champs obligatoires (14,2 s)
+]]></system-out>
+    <system-err><![CDATA[nov. 10, 2026 12:20:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 156
+nov. 10, 2026 12:20:04 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc17_informationsLivraison" classname="com.affariyet.tests.PagesInformationTest" time="10.664">
+    <system-out><![CDATA[2026-11-10 12:20:18 [INFO ] Navigateur fermé
+2026-11-10 12:20:18 [INFO ] ========== FIN : tc16_validationChampsObligatoires ==========
+2026-11-10 12:20:18 [INFO ] ========== DÉBUT : tc17_informationsLivraison ==========
+2026-11-10 12:20:20 [INFO ] Navigateur démarré : chrome
+2026-11-10 12:20:20 [INFO ] >> DÉMARRAGE : TC17 - Consultation des informations de livraison
+2026-11-10 12:20:20 [ETAPE] Ouverture de https://www.affariyet.com/
+2026-11-10 12:20:26 [ETAPE] Clic sur « Livraison » dans le pied de page
+2026-11-10 12:20:30 [INFO ] [RÉUSSI] TC17 - Consultation des informations de livraison (10,7 s)
+]]></system-out>
+    <system-err><![CDATA[nov. 10, 2026 12:20:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 156
+nov. 10, 2026 12:20:20 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc18_pageContact" classname="com.affariyet.tests.PagesInformationTest" time="12.118">
+    <failure message="The following asserts failed:&#10;	[Langue] Libellé non français dans le formulaire de contact : &quot;Optional&quot; (champ Document joint) expected [true] but found [false],&#10;	[Consentement] Texte de remplissage (Lorem Ipsum) : &quot;Enim quis fugiat consequat elit minim nisi eu occaecat occaecat deserunt aliquip nisi ex deserunt.&quot; — mots détectés : [fugiat, consequat, occaecat, deserunt, aliquip] expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	[Langue] Libellé non français dans le formulaire de contact : "Optional" (champ Document joint) expected [true] but found [false],
+	[Consentement] Texte de remplissage (Lorem Ipsum) : "Enim quis fugiat consequat elit minim nisi eu occaecat occaecat deserunt aliquip nisi ex deserunt." — mots détectés : [fugiat, consequat, occaecat, deserunt, aliquip] expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.affariyet.tests.PagesInformationTest.tc18_pageContact(PagesInformationTest.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[2026-11-10 12:20:31 [INFO ] Navigateur fermé
+2026-11-10 12:20:31 [INFO ] ========== FIN : tc17_informationsLivraison ==========
+2026-11-10 12:20:31 [INFO ] ========== DÉBUT : tc18_pageContact ==========
+2026-11-10 12:20:32 [INFO ] Navigateur démarré : chrome
+2026-11-10 12:20:32 [INFO ] >> DÉMARRAGE : TC18 - Consultation de la page contact
+2026-11-10 12:20:32 [ETAPE] Ouverture de https://www.affariyet.com/
+2026-11-10 12:20:38 [ETAPE] Clic sur « CONTACT » dans le menu
+2026-11-10 12:20:43 [ETAPE] Remplissage du formulaire de contact (sans envoi)
+2026-11-10 12:20:44 [ETAPE] Cochage de la case de consentement
+2026-11-10 12:20:44 [INFO ] Mention lue pour « Document joint » : "Optional"
+2026-11-10 12:20:44 [INFO ] Libellés et mentions lus dans le formulaire : [Sujet, Adresse e-mail, Document joint, Message, Optional]
+2026-11-10 12:20:44 [INFO ] Texte de consentement lu : "Enim quis fugiat consequat elit minim nisi eu occaecat occaecat deserunt aliquip nisi ex deserunt."
+2026-11-10 12:20:44 [ERREUR] [ÉCHOUÉ] TC18 - Consultation de la page contact (12,1 s)
+2026-11-10 12:20:44 [ERREUR]    Cause : java.lang.AssertionError: The following asserts failed:
+	[Langue] Libellé non français dans le formulaire de contact : "Optional" (champ Document joint) expected [true] but found [false],
+	[Consentement] Texte de remplissage (Lorem Ipsum) : "Enim quis fugiat consequat elit minim nisi eu occaecat occaecat deserunt aliquip nisi ex deserunt." — mots détectés : [fugiat, consequat, occaecat, deserunt, aliquip] expected [true] but found [false]
+]]></system-out>
+    <system-err><![CDATA[nov. 10, 2026 12:20:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 156
+nov. 10, 2026 12:20:32 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>

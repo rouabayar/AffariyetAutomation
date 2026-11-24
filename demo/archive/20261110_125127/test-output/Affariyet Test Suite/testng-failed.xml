@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Affariyet Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.affariyet.listeners.TestListener"/>
+    <listener class-name="com.affariyet.listeners.HtmlReportGenerator"/>
+  </listeners>
+  <test thread-count="5" name="Affariyet Functional Tests(failed)" verbose="0">
+    <classes>
+      <class name="com.affariyet.tests.RechercheTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tc20_triParPrixCroissant"/>
+        </methods>
+      </class> <!-- com.affariyet.tests.RechercheTest -->
+      <class name="com.affariyet.tests.CompteTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tc13_connexionValide"/>
+        </methods>
+      </class> <!-- com.affariyet.tests.CompteTest -->
+      <class name="com.affariyet.tests.PagesInformationTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tc18_pageContact"/>
+        </methods>
+      </class> <!-- com.affariyet.tests.PagesInformationTest -->
+    </classes>
+  </test> <!-- Affariyet Functional Tests(failed) -->
+</suite> <!-- Failed suite [Affariyet Test Suite] -->

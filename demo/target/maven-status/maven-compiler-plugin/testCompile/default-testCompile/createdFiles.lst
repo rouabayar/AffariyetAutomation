@@ -1,0 +1,14 @@
+com\affariyet\base\BaseTest.class
+com\affariyet\listeners\TestListener.class
+com\affariyet\tests\CatalogueTest.class
+com\affariyet\listeners\HtmlReportGenerator.class
+com\affariyet\AppTest.class
+tools\SiteInspectorEtape2$Etape.class
+tools\SiteInspector.class
+tools\SiteInspectorEtape2.class
+com\affariyet\tests\CompteTest.class
+com\affariyet\tests\RechercheTest.class
+tools\Tc20Diagnostic.class
+com\affariyet\tests\AccueilTest.class
+com\affariyet\tests\PagesInformationTest.class
+com\affariyet\tests\PanierTest.class

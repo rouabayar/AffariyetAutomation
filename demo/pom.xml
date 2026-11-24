@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.affariyet</groupId>
+    <artifactId>AffariyetAutomation</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>Affariyet Functional Tests</name>
+
+    <properties>
+        <maven.compiler.release>17</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <selenium.version>4.27.0</selenium.version>
+        <testng.version>7.10.2</testng.version>
+    </properties>
+
+    <dependencies>
+
+        <!-- Selenium WebDriver -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+
+        <!-- TestNG -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Liaison SLF4J pour TestNG : TestNG 7.10.2 apporte slf4j-api 1.7.36 sans liaison, d'où l'avertissement
+             « Failed to load class org.slf4j.impl.StaticLoggerBinder ». slf4j-nop 1.7.36 (même version, vérifiée
+             avec mvn dependency:tree) complète la configuration : les journaux internes de TestNG sont ignorés. -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-nop</artifactId>
+            <version>1.7.36</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+
+            <!-- Compilation Java 17 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <release>17</release>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+
+            <!-- Exécution des tests TestNG -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                    <!-- Rapports TestNG (index.html, emailable-report.html, testng-results.xml) dans test-output/ -->
+                    <reportsDirectory>${project.basedir}/test-output</reportsDirectory>
+                    <!-- Sorties du JVM de test en UTF-8. Java 17 utilise sun.stdout.encoding / sun.stderr.encoding
+                         (stdout.encoding n'existe qu'à partir de Java 19). La console doit aussi être en UTF-8 :
+                         voir lancer-tests.ps1 et le README. -->
+                    <argLine>-Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8</argLine>
+                    <!-- Traces raccourcies dans la console Maven ; traces complètes conservées dans test-output/,
+                         reports/rapport-execution.html et reports/logs/execution.log -->
+                    <trimStackTrace>true</trimStackTrace>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+    <profiles>
+        <!-- Diagnostic de TC20, SÉPARÉ de la suite des 20 tests :  mvn test -Pdiagnostic-tc20
+             (aussi activé par  mvn test "-Dtest=Tc20Diagnostic" ).
+             - <test> : Surefire ignore alors suiteXmlFiles (testng.xml et ses listeners ne sont pas chargés) ;
+               suiteXmlFiles est en plus vidé ici (double protection).
+             - Tous les rapports du diagnostic vont dans diagnostics/tc20/<aaaaMMjj_HHmmss>_UTC/ :
+               rapports Surefire/TestNG (surefire/), journal (journal/logs/execution.log), résultats de l'outil.
+               reports/, screenshots/ et test-output/ ne sont pas touchés.
+             - L'horodatage de Maven (maven.build.timestamp) est en UTC, d'où le suffixe _UTC. -->
+        <profile>
+            <id>diagnostic-tc20</id>
+            <activation>
+                <property>
+                    <name>test</name>
+                    <value>Tc20Diagnostic</value>
+                </property>
+            </activation>
+            <properties>
+                <maven.build.timestamp.format>yyyyMMdd_HHmmss'_UTC'</maven.build.timestamp.format>
+                <diagnostic.dossier>${project.basedir}/diagnostics/tc20/${maven.build.timestamp}</diagnostic.dossier>
+            </properties>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <test>Tc20Diagnostic</test>
+                            <suiteXmlFiles combine.self="override"/>
+                            <failIfNoSpecifiedTests>true</failIfNoSpecifiedTests>
+                            <reportsDirectory>${diagnostic.dossier}/surefire</reportsDirectory>
+                            <systemPropertyVariables>
+                                <diagnostic.dossier>${diagnostic.dossier}</diagnostic.dossier>
+                                <reports.dir>${diagnostic.dossier}/journal</reports.dir>
+                                <screenshots.dir>${diagnostic.dossier}/journal/captures</screenshots.dir>
+                            </systemPropertyVariables>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>

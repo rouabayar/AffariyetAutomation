@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 258.7 s <<< FAILURE! -- in TestSuite
+com.affariyet.tests.PagesInformationTest.tc18_pageContact -- Time elapsed: 7.686 s <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	[Langue] Libellé non français dans le formulaire de contact : "Optional" (champ Document joint) expected [true] but found [false],
+	[Consentement] Texte de remplissage (Lorem Ipsum) : "Enim quis fugiat consequat elit minim nisi eu occaecat occaecat deserunt aliquip nisi ex deserunt." — mots détectés : [fugiat, consequat, occaecat, deserunt, aliquip] expected [true] but found [false]
+	at com.affariyet.tests.PagesInformationTest.tc18_pageContact(PagesInformationTest.java:76)
+
+com.affariyet.tests.RechercheTest.tc20_triParPrixCroissant -- Time elapsed: 30.28 s <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for url to contain "order=product.price.asc". Current url: "https://www.affariyet.com/recherche?controller=search&s=samsung" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60807}, goog:processID: 17168, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60807/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f72fbde38cfbbacfd3fb6228d6fd9961
+	at com.affariyet.tests.RechercheTest.tc20_triParPrixCroissant(RechercheTest.java:65)
+

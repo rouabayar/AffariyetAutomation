@@ -1,0 +1,1608 @@
+2026-11-10 12:51:33 [INFO ] ==== TC01 - Accès à la page d'accueil ====
+2026-11-10 12:51:33 [INFO ] Note : avertissements « CDP / DevTools » de Selenium 4.27 filtrés (Chrome plus récent que Selenium, fonctionnalité non utilisée par le projet). Réactivation : -Dselenium.cdp.avertissements=true
+2026-11-10 12:51:35 [DETAIL] [TC01] Navigateur démarré : chrome
+2026-11-10 12:51:35 [ETAPE] [TC01] Ouverture de https://www.affariyet.com/
+2026-11-10 12:51:41 [INFO ] [TC01] RÉUSSI (6,0 s)
+2026-11-10 12:51:41 [DETAIL] [TC01] Navigateur fermé
+2026-11-10 12:51:41 [INFO ] ==== TC02 - Vérification du titre de la page d'accueil ====
+2026-11-10 12:51:42 [DETAIL] [TC02] Navigateur démarré : chrome
+2026-11-10 12:51:42 [ETAPE] [TC02] Ouverture de https://www.affariyet.com/
+2026-11-10 12:51:47 [INFO ] [TC02] Titre de la page : Affariyet.com : Vente en Ligne Tunisie |smartphone, Informatique, Electroménager
+2026-11-10 12:51:47 [INFO ] [TC02] RÉUSSI (5,3 s)
+2026-11-10 12:51:47 [DETAIL] [TC02] Navigateur fermé
+2026-11-10 12:51:47 [INFO ] ==== TC03 - Recherche d'un produit existant ====
+2026-11-10 12:51:48 [DETAIL] [TC03] Navigateur démarré : chrome
+2026-11-10 12:51:48 [DETAIL] [TC03] 14 données de test chargées depuis test-data/testdata.csv
+2026-11-10 12:51:48 [ETAPE] [TC03] Ouverture de https://www.affariyet.com/
+2026-11-10 12:51:53 [ETAPE] [TC03] Recherche du mot-clé : samsung
+2026-11-10 12:51:56 [INFO ] [TC03] Nombre de produits annoncé : 205
+2026-11-10 12:51:56 [INFO ] [TC03] RÉUSSI (8,3 s)
+2026-11-10 12:51:56 [DETAIL] [TC03] Navigateur fermé
+2026-11-10 12:51:56 [INFO ] ==== TC04 - Recherche d'un produit inexistant ====
+2026-11-10 12:51:57 [DETAIL] [TC04] Navigateur démarré : chrome
+2026-11-10 12:51:57 [ETAPE] [TC04] Ouverture de https://www.affariyet.com/
+2026-11-10 12:52:23 [ERREUR] [TC04] ÉCHOUÉ (25,4 s) — TimeoutException : Expected condition failed: waiting for com.affariyet.utils.WaitUtils$$Lambda$665/0x0000026d9c2328f0@6622a690 (tried for 20 second(s) with 500 milliseconds interval)
+2026-11-10 12:52:23 [DETAIL] [TC04] Trace complète :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.affariyet.utils.WaitUtils$$Lambda$665/0x0000026d9c2328f0@6622a690 (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51240}, goog:processID: 28216, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51240/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5b1d2de0818b591412db6781a40fae82
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.affariyet.utils.WaitUtils.pageReady(WaitUtils.java:33)
+	at com.affariyet.pages.BasePage.openUrl(BasePage.java:46)
+	at com.affariyet.pages.HomePage.open(HomePage.java:14)
+	at com.affariyet.base.BaseTest.openHomePage(BaseTest.java:61)
+	at com.affariyet.tests.RechercheTest.tc04_rechercheProduitInexistant(RechercheTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+2026-11-10 12:52:23 [INFO ] [TC04] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc04_rechercheProduitInexistant_20261110_125223.png
+2026-11-10 12:52:23 [DETAIL] [TC04] Navigateur fermé
+2026-11-10 12:52:23 [INFO ] ==== TC05 - Navigation entre catégories ====
+2026-11-10 12:52:24 [DETAIL] [TC05] Navigateur démarré : chrome
+2026-11-10 12:52:24 [ETAPE] [TC05] Ouverture de https://www.affariyet.com/
+2026-11-10 12:52:29 [ETAPE] [TC05] Clic sur la catégorie « Réfrigérateurs » dans le pied de page
+2026-11-10 12:52:33 [ETAPE] [TC05] Clic sur la catégorie « Lave Linge » dans le pied de page
+2026-11-10 12:52:38 [INFO ] [TC05] RÉUSSI (13,5 s)
+2026-11-10 12:52:38 [DETAIL] [TC05] Navigateur fermé
+2026-11-10 12:52:38 [INFO ] ==== TC06 - Consultation d'un produit ====
+2026-11-10 12:52:39 [DETAIL] [TC06] Navigateur démarré : chrome
+2026-11-10 12:52:39 [ETAPE] [TC06] Ouverture de https://www.affariyet.com/
+2026-11-10 12:52:44 [ETAPE] [TC06] Recherche du mot-clé : samsung
+2026-11-10 12:52:48 [ETAPE] [TC06] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+2026-11-10 12:52:51 [INFO ] [TC06] RÉUSSI (12,8 s)
+2026-11-10 12:52:52 [DETAIL] [TC06] Navigateur fermé
+2026-11-10 12:52:52 [INFO ] ==== TC07 - Vérification du prix d'un produit ====
+2026-11-10 12:52:52 [DETAIL] [TC07] Navigateur démarré : chrome
+2026-11-10 12:52:52 [ETAPE] [TC07] Ouverture de https://www.affariyet.com/
+2026-11-10 12:52:58 [ETAPE] [TC07] Recherche du mot-clé : samsung
+2026-11-10 12:53:02 [ETAPE] [TC07] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+2026-11-10 12:53:05 [INFO ] [TC07] Prix liste = 2 369,000 TND | prix fiche = 2 369,000 TND
+2026-11-10 12:53:05 [INFO ] [TC07] RÉUSSI (12,6 s)
+2026-11-10 12:53:05 [DETAIL] [TC07] Navigateur fermé
+2026-11-10 12:53:05 [INFO ] ==== TC08 - Ajout d'un produit au panier ====
+2026-11-10 12:53:06 [DETAIL] [TC08] Navigateur démarré : chrome
+2026-11-10 12:53:06 [ETAPE] [TC08] Ouverture de https://www.affariyet.com/
+2026-11-10 12:53:11 [ETAPE] [TC08] Recherche du mot-clé : samsung
+2026-11-10 12:53:15 [ETAPE] [TC08] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+2026-11-10 12:53:20 [ETAPE] [TC08] Clic sur « Ajouter au panier »
+2026-11-10 12:53:22 [INFO ] [TC08] Compteur du panier = 1
+2026-11-10 12:53:22 [INFO ] [TC08] RÉUSSI (16,2 s)
+2026-11-10 12:53:22 [DETAIL] [TC08] Navigateur fermé
+2026-11-10 12:53:22 [INFO ] ==== TC09 - Vérification du contenu du panier ====
+2026-11-10 12:53:23 [DETAIL] [TC09] Navigateur démarré : chrome
+2026-11-10 12:53:23 [ETAPE] [TC09] Ouverture de https://www.affariyet.com/
+2026-11-10 12:53:33 [ETAPE] [TC09] Recherche du mot-clé : samsung
+2026-11-10 12:53:36 [ETAPE] [TC09] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+2026-11-10 12:53:41 [ETAPE] [TC09] Clic sur « Ajouter au panier »
+2026-11-10 12:53:43 [INFO ] [TC09] Compteur du panier = 1
+2026-11-10 12:53:43 [ETAPE] [TC09] Ouverture de https://www.affariyet.com/panier?action=show
+2026-11-10 12:53:46 [INFO ] [TC09] RÉUSSI (22,8 s)
+2026-11-10 12:53:46 [DETAIL] [TC09] Navigateur fermé
+2026-11-10 12:53:46 [INFO ] ==== TC10 - Modification de la quantité ====
+2026-11-10 12:53:47 [DETAIL] [TC10] Navigateur démarré : chrome
+2026-11-10 12:53:47 [ETAPE] [TC10] Ouverture de https://www.affariyet.com/
+2026-11-10 12:53:52 [ETAPE] [TC10] Recherche du mot-clé : samsung
+2026-11-10 12:53:55 [ETAPE] [TC10] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+2026-11-10 12:53:59 [ETAPE] [TC10] Clic sur « + » (quantité actuelle : 1)
+2026-11-10 12:54:00 [ETAPE] [TC10] Clic sur « Ajouter au panier »
+2026-11-10 12:54:01 [INFO ] [TC10] Compteur du panier = 2
+2026-11-10 12:54:01 [INFO ] [TC10] RÉUSSI (14,5 s)
+2026-11-10 12:54:01 [DETAIL] [TC10] Navigateur fermé
+2026-11-10 12:54:01 [INFO ] ==== TC11 - Suppression d'un produit du panier ====
+2026-11-10 12:54:02 [DETAIL] [TC11] Navigateur démarré : chrome
+2026-11-10 12:54:02 [ETAPE] [TC11] Ouverture de https://www.affariyet.com/
+2026-11-10 12:54:07 [ETAPE] [TC11] Recherche du mot-clé : samsung
+2026-11-10 12:54:10 [ETAPE] [TC11] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+2026-11-10 12:54:14 [ETAPE] [TC11] Clic sur « Ajouter au panier »
+2026-11-10 12:54:15 [INFO ] [TC11] Compteur du panier = 1
+2026-11-10 12:54:15 [ETAPE] [TC11] Ouverture de https://www.affariyet.com/panier?action=show
+2026-11-10 12:54:18 [ETAPE] [TC11] Suppression de la première ligne du panier
+2026-11-10 12:54:20 [INFO ] [TC11] RÉUSSI (17,3 s)
+2026-11-10 12:54:20 [DETAIL] [TC11] Navigateur fermé
+2026-11-10 12:54:20 [INFO ] ==== TC12 - Vérification du panier vide ====
+2026-11-10 12:54:26 [DETAIL] [TC12] Navigateur démarré : chrome
+2026-11-10 12:54:26 [ETAPE] [TC12] Ouverture de https://www.affariyet.com/
+2026-11-10 12:54:31 [ETAPE] [TC12] Ouverture de https://www.affariyet.com/panier?action=show
+2026-11-10 12:54:36 [INFO ] [TC12] RÉUSSI (10,0 s)
+2026-11-10 12:54:36 [DETAIL] [TC12] Navigateur fermé
+2026-11-10 12:54:36 [INFO ] ==== TC13 - Connexion valide ====
+2026-11-10 12:54:37 [DETAIL] [TC13] Navigateur démarré : chrome
+2026-11-10 12:54:37 [INFO ] [TC13] IGNORÉ — Identifiants absents : définir AFFARIYET_EMAIL et AFFARIYET_PASSWORD (compte de test personnel) pour exécuter ce test
+2026-11-10 12:54:37 [DETAIL] [TC13] Navigateur fermé
+2026-11-10 12:54:37 [INFO ] ==== TC14 - Connexion invalide ====
+2026-11-10 12:54:38 [DETAIL] [TC14] Navigateur démarré : chrome
+2026-11-10 12:54:38 [ETAPE] [TC14] Ouverture de https://www.affariyet.com/
+2026-11-10 12:54:44 [ETAPE] [TC14] Clic sur « Connexion » dans l'en-tête
+2026-11-10 12:54:48 [ETAPE] [TC14] Connexion avec l'e-mail : c***@example.com
+2026-11-10 12:54:53 [INFO ] [TC14] RÉUSSI (15,4 s)
+2026-11-10 12:54:53 [DETAIL] [TC14] Navigateur fermé
+2026-11-10 12:54:53 [INFO ] ==== TC15 - Accès à la page d'inscription ====
+2026-11-10 12:54:54 [DETAIL] [TC15] Navigateur démarré : chrome
+2026-11-10 12:54:54 [ETAPE] [TC15] Ouverture de https://www.affariyet.com/
+2026-11-10 12:55:01 [ETAPE] [TC15] Clic sur « Connexion » dans l'en-tête
+2026-11-10 12:55:04 [ETAPE] [TC15] Clic sur « Pas de compte ? Créez-en un »
+2026-11-10 12:55:08 [INFO ] [TC15] RÉUSSI (13,6 s)
+2026-11-10 12:55:08 [DETAIL] [TC15] Navigateur fermé
+2026-11-10 12:55:08 [INFO ] ==== TC16 - Validation des champs obligatoires ====
+2026-11-10 12:55:09 [DETAIL] [TC16] Navigateur démarré : chrome
+2026-11-10 12:55:09 [ETAPE] [TC16] Ouverture de https://www.affariyet.com/
+2026-11-10 12:55:15 [ETAPE] [TC16] Clic sur « Connexion » dans l'en-tête
+2026-11-10 12:55:19 [ETAPE] [TC16] Clic sur « Connexion » avec des champs vides
+2026-11-10 12:55:19 [INFO ] [TC16] Message de validation du navigateur : Veuillez renseigner ce champ.
+2026-11-10 12:55:19 [ETAPE] [TC16] Clic sur « Pas de compte ? Créez-en un »
+2026-11-10 12:55:24 [INFO ] [TC16] Champs obligatoires de l'inscription : [customer_firstname, customer_lastname, customer_email]
+2026-11-10 12:55:24 [INFO ] [TC16] RÉUSSI (15,2 s)
+2026-11-10 12:55:24 [DETAIL] [TC16] Navigateur fermé
+2026-11-10 12:55:24 [INFO ] ==== TC17 - Consultation des informations de livraison ====
+2026-11-10 12:55:25 [DETAIL] [TC17] Navigateur démarré : chrome
+2026-11-10 12:55:25 [ETAPE] [TC17] Ouverture de https://www.affariyet.com/
+2026-11-10 12:55:30 [ETAPE] [TC17] Clic sur « Livraison » dans le pied de page
+2026-11-10 12:55:33 [INFO ] [TC17] RÉUSSI (7,4 s)
+2026-11-10 12:55:33 [DETAIL] [TC17] Navigateur fermé
+2026-11-10 12:55:33 [INFO ] ==== TC18 - Consultation de la page contact ====
+2026-11-10 12:55:34 [DETAIL] [TC18] Navigateur démarré : chrome
+2026-11-10 12:55:34 [ETAPE] [TC18] Ouverture de https://www.affariyet.com/
+2026-11-10 12:55:38 [ETAPE] [TC18] Clic sur « CONTACT » dans le menu
+2026-11-10 12:55:42 [ETAPE] [TC18] Remplissage du formulaire de contact (sans envoi)
+2026-11-10 12:55:42 [ETAPE] [TC18] Cochage de la case de consentement
+2026-11-10 12:55:42 [INFO ] [TC18] Mention lue pour « Document joint » : "Optional"
+2026-11-10 12:55:42 [INFO ] [TC18] Libellés et mentions lus dans le formulaire : [Sujet, Adresse e-mail, Document joint, Message, Optional]
+2026-11-10 12:55:42 [INFO ] [TC18] Texte de consentement lu : "Enim quis fugiat consequat elit minim nisi eu occaecat occaecat deserunt aliquip nisi ex deserunt."
+2026-11-10 12:55:42 [ERREUR] [TC18] ÉCHOUÉ (8,5 s) — [Langue] Libellé non français dans le formulaire de contact : "Optional" (champ Document joint) ; [Consentement] Texte de remplissage (Lorem Ipsum) : "Enim quis fugiat consequat elit minim nisi eu occaecat occaecat deserunt aliquip nisi ex deserunt." — mots détectés : [fugiat, consequat, occaecat, deserunt, aliquip]
+2026-11-10 12:55:42 [DETAIL] [TC18] Trace complète :
+java.lang.AssertionError: The following asserts failed:
+	[Langue] Libellé non français dans le formulaire de contact : "Optional" (champ Document joint) expected [true] but found [false],
+	[Consentement] Texte de remplissage (Lorem Ipsum) : "Enim quis fugiat consequat elit minim nisi eu occaecat occaecat deserunt aliquip nisi ex deserunt." — mots détectés : [fugiat, consequat, occaecat, deserunt, aliquip] expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.affariyet.tests.PagesInformationTest.tc18_pageContact(PagesInformationTest.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+2026-11-10 12:55:42 [INFO ] [TC18] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc18_pageContact_20261110_125542.png
+2026-11-10 12:55:42 [DETAIL] [TC18] Navigateur fermé
+2026-11-10 12:55:42 [INFO ] ==== TC19 - Navigation entre les pages de produits (pagination) ====
+2026-11-10 12:55:43 [DETAIL] [TC19] Navigateur démarré : chrome
+2026-11-10 12:55:43 [ETAPE] [TC19] Ouverture de https://www.affariyet.com/
+2026-11-10 12:55:48 [ETAPE] [TC19] Recherche du mot-clé : samsung
+2026-11-10 12:55:51 [ETAPE] [TC19] Clic sur « Suivant » (pagination)
+2026-11-10 12:55:52 [INFO ] [TC19] Pagination page 2 : Affichage 17-32 de 205 article(s) navigate_beforePRÉCÉDENT 1 2 3 … 13 SUIVANTnavigate_next
+2026-11-10 12:55:52 [INFO ] [TC19] RÉUSSI (9,2 s)
+2026-11-10 12:55:53 [DETAIL] [TC19] Navigateur fermé
+2026-11-10 12:55:53 [INFO ] ==== TC20 - Fonctionnalité supplémentaire : tri par prix croissant ====
+2026-11-10 12:55:53 [DETAIL] [TC20] Navigateur démarré : chrome
+2026-11-10 12:55:53 [ETAPE] [TC20] Ouverture de https://www.affariyet.com/
+2026-11-10 12:56:00 [ETAPE] [TC20] Recherche du mot-clé : samsung
+2026-11-10 12:56:04 [ETAPE] [TC20] Tri par prix croissant
+2026-11-10 12:56:25 [ERREUR] [TC20] ÉCHOUÉ (31,8 s) — TimeoutException : Expected condition failed: waiting for url to contain "order=product.price.asc". Current url: "https://www.affariyet.com/recherche?controller=search&s=samsung" (tried for 20 second(s) with 500 milliseconds interval)
+2026-11-10 12:56:25 [DETAIL] [TC20] Trace complète :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "order=product.price.asc". Current url: "https://www.affariyet.com/recherche?controller=search&s=samsung" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51818}, goog:processID: 27660, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51818/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4fadbe79f1948cb986629e88cdbaea17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.affariyet.utils.WaitUtils.urlContains(WaitUtils.java:58)
+	at com.affariyet.pages.ProductListPage.sortByPriceAscending(ProductListPage.java:101)
+	at com.affariyet.tests.RechercheTest.tc20_triParPrixCroissant(RechercheTest.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+2026-11-10 12:56:25 [INFO ] [TC20] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc20_triParPrixCroissant_20261110_125625.png
+2026-11-10 12:56:25 [DETAIL] [TC20] Navigateur fermé
+2026-11-10 12:56:25 [INFO ] ====================================================================================================
+2026-11-10 12:56:25 [INFO ] BILAN GLOBAL : 20 tests — 16 réussi(s), 3 échoué(s), 1 ignoré(s) — durée cumulée 265,4 s, durée totale 292,1 s
+2026-11-10 12:56:25 [INFO ]   ÉCHOUÉ : TC04 - Recherche d'un produit inexistant — TimeoutException : Expected condition failed: waiting for com.affariyet.utils.WaitUtils$$Lambda$665/0x0000026d9c2328f0@6622a690 (tried for 20 second(s) with 500 milliseconds interval)
+2026-11-10 12:56:25 [INFO ]   ÉCHOUÉ : TC18 - Consultation de la page contact — [Langue] Libellé non français dans le formulaire de contact : "Optional" (champ Document joint) ; [Consentement] Texte de remplissage (Lorem Ipsum) : "Enim quis fugiat consequat elit minim nisi eu occaecat occaecat deserunt aliquip nisi ex deserunt." — mots détectés : [fugiat, consequat, occaecat, deserunt, aliquip]
+2026-11-10 12:56:25 [INFO ]   ÉCHOUÉ : TC20 - Fonctionnalité supplémentaire : tri par prix croissant — TimeoutException : Expected condition failed: waiting for url to contain "order=product.price.asc". Current url: "https://www.affariyet.com/recherche?controller=search&s=samsung" (tried for 20 second(s) with 500 milliseconds interval)
+2026-11-10 12:56:25 [INFO ]   IGNORÉ : TC13 - Connexion valide — Identifiants absents : définir AFFARIYET_EMAIL et AFFARIYET_PASSWORD (compte de test personnel) pour exécuter ce test
+2026-11-10 12:56:25 [INFO ]   Rapports : reports\rapport-execution.html · test-output\index.html · reports\logs\execution.log
+2026-11-10 12:56:25 [INFO ] ====================================================================================================
+2026-11-10 12:56:25 [INFO ] Rapport HTML généré : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\reports\rapport-execution.html
+2026-11-10 13:07:56 [INFO ] ==== TC01 - Accès à la page d'accueil ====
+2026-11-10 13:07:56 [INFO ] Note : avertissements « CDP / DevTools » de Selenium 4.27 filtrés (Chrome plus récent que Selenium, fonctionnalité non utilisée par le projet). Réactivation : -Dselenium.cdp.avertissements=true
+2026-11-10 13:07:57 [DETAIL] [TC01] Navigateur démarré : chrome
+2026-11-10 13:07:57 [ETAPE] [TC01] Ouverture de https://www.affariyet.com/
+2026-11-10 13:08:08 [INFO ] [TC01] RÉUSSI (10,8 s)
+2026-11-10 13:08:08 [DETAIL] [TC01] Navigateur fermé
+2026-11-10 13:08:08 [INFO ] ==== TC02 - Vérification du titre de la page d'accueil ====
+2026-11-10 13:08:09 [DETAIL] [TC02] Navigateur démarré : chrome
+2026-11-10 13:08:09 [ETAPE] [TC02] Ouverture de https://www.affariyet.com/
+2026-11-10 13:08:33 [ERREUR] [TC02] ÉCHOUÉ (24,1 s) — TimeoutException : Expected condition failed: waiting for com.affariyet.utils.WaitUtils$$Lambda$665/0x00000277be232d90@3174cb09 (tried for 20 second(s) with 500 milliseconds interval)
+2026-11-10 13:08:33 [DETAIL] [TC02] Trace complète :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.affariyet.utils.WaitUtils$$Lambda$665/0x00000277be232d90@3174cb09 (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51969}, goog:processID: 16440, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51969/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e96a838f63df2be69d7552e237b44125
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.affariyet.utils.WaitUtils.pageReady(WaitUtils.java:33)
+	at com.affariyet.pages.BasePage.openUrl(BasePage.java:46)
+	at com.affariyet.pages.HomePage.open(HomePage.java:14)
+	at com.affariyet.base.BaseTest.openHomePage(BaseTest.java:61)
+	at com.affariyet.tests.AccueilTest.tc02_verificationTitre(AccueilTest.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+2026-11-10 13:08:34 [INFO ] [TC02] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc02_verificationTitre_20261110_130833.png
+2026-11-10 13:08:34 [DETAIL] [TC02] Navigateur fermé
+2026-11-10 13:08:34 [INFO ] ==== TC03 - Recherche d'un produit existant ====
+2026-11-10 13:08:35 [DETAIL] [TC03] Navigateur démarré : chrome
+2026-11-10 13:08:35 [DETAIL] [TC03] 14 données de test chargées depuis test-data/testdata.csv
+2026-11-10 13:08:35 [ETAPE] [TC03] Ouverture de https://www.affariyet.com/
+2026-11-10 13:08:39 [ETAPE] [TC03] Recherche du mot-clé : samsung
+2026-11-10 13:08:43 [INFO ] [TC03] Nombre de produits annoncé : 205
+2026-11-10 13:08:43 [INFO ] [TC03] RÉUSSI (7,8 s)
+2026-11-10 13:08:43 [DETAIL] [TC03] Navigateur fermé
+2026-11-10 13:08:43 [INFO ] ==== TC04 - Recherche d'un produit inexistant ====
+2026-11-10 13:08:44 [DETAIL] [TC04] Navigateur démarré : chrome
+2026-11-10 13:08:44 [ETAPE] [TC04] Ouverture de https://www.affariyet.com/
+2026-11-10 13:08:56 [ETAPE] [TC04] Recherche du mot-clé : zzqxwproduitinexistant
+2026-11-10 13:09:56 [ERREUR] [TC04] ÉCHOUÉ (72,4 s) — Le message « aucun produit » n'est pas affiché
+2026-11-10 13:09:56 [DETAIL] [TC04] Trace complète :
+java.lang.AssertionError: Le message « aucun produit » n'est pas affiché expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.affariyet.tests.RechercheTest.tc04_rechercheProduitInexistant(RechercheTest.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+2026-11-10 13:09:56 [INFO ] [TC04] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc04_rechercheProduitInexistant_20261110_130956.png
+2026-11-10 13:09:56 [DETAIL] [TC04] Navigateur fermé
+2026-11-10 13:09:56 [INFO ] ==== TC05 - Navigation entre catégories ====
+2026-11-10 13:09:57 [DETAIL] [TC05] Navigateur démarré : chrome
+2026-11-10 13:09:57 [ETAPE] [TC05] Ouverture de https://www.affariyet.com/
+2026-11-10 13:09:58 [ERREUR] [TC05] ÉCHOUÉ (0,2 s) — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:09:58 [DETAIL] [TC05] Trace complète :
+org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=156.0.8078.80)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [48341ff54510aaec3f27f5e39df9698b, get {url=https://www.affariyet.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54896}, goog:processID: 18516, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54896/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 48341ff54510aaec3f27f5e39df9698b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.affariyet.pages.BasePage.openUrl(BasePage.java:45)
+	at com.affariyet.pages.HomePage.open(HomePage.java:14)
+	at com.affariyet.base.BaseTest.openHomePage(BaseTest.java:61)
+	at com.affariyet.tests.CatalogueTest.tc05_navigationEntreCategories(CatalogueTest.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+2026-11-10 13:09:58 [INFO ] [TC05] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc05_navigationEntreCategories_20261110_130958.png
+2026-11-10 13:09:58 [DETAIL] [TC05] Navigateur fermé
+2026-11-10 13:09:58 [INFO ] ==== TC06 - Consultation d'un produit ====
+2026-11-10 13:09:59 [DETAIL] [TC06] Navigateur démarré : chrome
+2026-11-10 13:09:59 [ETAPE] [TC06] Ouverture de https://www.affariyet.com/
+2026-11-10 13:09:59 [ERREUR] [TC06] ÉCHOUÉ (0,2 s) — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:09:59 [DETAIL] [TC06] Trace complète :
+org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=156.0.8078.80)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [530ff25a54867c64c42f17ede8ccf5af, get {url=https://www.affariyet.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54905}, goog:processID: 12440, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54905/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 530ff25a54867c64c42f17ede8ccf5af
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.affariyet.pages.BasePage.openUrl(BasePage.java:45)
+	at com.affariyet.pages.HomePage.open(HomePage.java:14)
+	at com.affariyet.base.BaseTest.openHomePage(BaseTest.java:61)
+	at com.affariyet.tests.CatalogueTest.tc06_consultationProduit(CatalogueTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+2026-11-10 13:09:59 [INFO ] [TC06] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc06_consultationProduit_20261110_130959.png
+2026-11-10 13:09:59 [DETAIL] [TC06] Navigateur fermé
+2026-11-10 13:09:59 [INFO ] ==== TC07 - Vérification du prix d'un produit ====
+2026-11-10 13:10:00 [DETAIL] [TC07] Navigateur démarré : chrome
+2026-11-10 13:10:00 [ETAPE] [TC07] Ouverture de https://www.affariyet.com/
+2026-11-10 13:10:02 [ERREUR] [TC07] ÉCHOUÉ (2,0 s) — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:02 [DETAIL] [TC07] Trace complète :
+org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=156.0.8078.80)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4997641d7e20ca2732d22d676b5f5cfd, get {url=https://www.affariyet.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59950}, goog:processID: 4920, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59950/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4997641d7e20ca2732d22d676b5f5cfd
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.affariyet.pages.BasePage.openUrl(BasePage.java:45)
+	at com.affariyet.pages.HomePage.open(HomePage.java:14)
+	at com.affariyet.base.BaseTest.openHomePage(BaseTest.java:61)
+	at com.affariyet.tests.CatalogueTest.tc07_verificationPrix(CatalogueTest.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+2026-11-10 13:10:02 [INFO ] [TC07] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc07_verificationPrix_20261110_131002.png
+2026-11-10 13:10:02 [DETAIL] [TC07] Navigateur fermé
+2026-11-10 13:10:02 [INFO ] ==== TC08 - Ajout d'un produit au panier ====
+2026-11-10 13:10:03 [DETAIL] [TC08] Navigateur démarré : chrome
+2026-11-10 13:10:03 [ETAPE] [TC08] Ouverture de https://www.affariyet.com/
+2026-11-10 13:10:04 [ERREUR] [TC08] ÉCHOUÉ (0,3 s) — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:04 [DETAIL] [TC08] Trace complète :
+org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=156.0.8078.80)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ecb809227418a98d849ba9b8aa9309fc, get {url=https://www.affariyet.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54011}, goog:processID: 25060, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54011/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ecb809227418a98d849ba9b8aa9309fc
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.affariyet.pages.BasePage.openUrl(BasePage.java:45)
+	at com.affariyet.pages.HomePage.open(HomePage.java:14)
+	at com.affariyet.base.BaseTest.openHomePage(BaseTest.java:61)
+	at com.affariyet.tests.PanierTest.openTestProduct(PanierTest.java:18)
+	at com.affariyet.tests.PanierTest.tc08_ajoutAuPanier(PanierTest.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+2026-11-10 13:10:04 [INFO ] [TC08] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc08_ajoutAuPanier_20261110_131004.png
+2026-11-10 13:10:04 [DETAIL] [TC08] Navigateur fermé
+2026-11-10 13:10:04 [INFO ] ==== TC09 - Vérification du contenu du panier ====
+2026-11-10 13:10:05 [DETAIL] [TC09] Navigateur démarré : chrome
+2026-11-10 13:10:05 [ETAPE] [TC09] Ouverture de https://www.affariyet.com/
+2026-11-10 13:10:14 [ETAPE] [TC09] Recherche du mot-clé : samsung
+2026-11-10 13:10:34 [ERREUR] [TC09] ÉCHOUÉ (29,9 s) — TimeoutException : Expected condition failed: waiting for element to be clickable: By.cssSelector: input[name='s'] (tried for 20 second(s) with 500 milliseconds interval)
+2026-11-10 13:10:34 [DETAIL] [TC09] Trace complète :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: input[name='s'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64025}, goog:processID: 18700, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64025/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0735b53026db53a79b46c92fdf07407f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.affariyet.utils.WaitUtils.clickable(WaitUtils.java:50)
+	at com.affariyet.pages.BasePage.type(BasePage.java:78)
+	at com.affariyet.pages.BasePage.search(BasePage.java:144)
+	at com.affariyet.tests.PanierTest.openTestProduct(PanierTest.java:18)
+	at com.affariyet.tests.PanierTest.tc09_verificationPanier(PanierTest.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+2026-11-10 13:10:35 [INFO ] [TC09] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc09_verificationPanier_20261110_131034.png
+2026-11-10 13:10:35 [DETAIL] [TC09] Navigateur fermé
+2026-11-10 13:10:35 [INFO ] ==== TC10 - Modification de la quantité ====
+2026-11-10 13:10:36 [DETAIL] [TC10] Navigateur démarré : chrome
+2026-11-10 13:10:36 [ETAPE] [TC10] Ouverture de https://www.affariyet.com/
+2026-11-10 13:10:36 [ERREUR] [TC10] ÉCHOUÉ (0,2 s) — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:36 [DETAIL] [TC10] Trace complète :
+org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=156.0.8078.80)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c049bcae6611e13c37c65e6160383962, get {url=https://www.affariyet.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54636}, goog:processID: 9416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54636/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c049bcae6611e13c37c65e6160383962
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.affariyet.pages.BasePage.openUrl(BasePage.java:45)
+	at com.affariyet.pages.HomePage.open(HomePage.java:14)
+	at com.affariyet.base.BaseTest.openHomePage(BaseTest.java:61)
+	at com.affariyet.tests.PanierTest.openTestProduct(PanierTest.java:18)
+	at com.affariyet.tests.PanierTest.tc10_modificationQuantite(PanierTest.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+2026-11-10 13:10:36 [INFO ] [TC10] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc10_modificationQuantite_20261110_131036.png
+2026-11-10 13:10:36 [DETAIL] [TC10] Navigateur fermé
+2026-11-10 13:10:36 [INFO ] ==== TC11 - Suppression d'un produit du panier ====
+2026-11-10 13:10:37 [DETAIL] [TC11] Navigateur démarré : chrome
+2026-11-10 13:10:37 [ETAPE] [TC11] Ouverture de https://www.affariyet.com/
+2026-11-10 13:10:37 [ERREUR] [TC11] ÉCHOUÉ (0,2 s) — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:37 [DETAIL] [TC11] Trace complète :
+org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=156.0.8078.80)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5c2af95fd71711762c4de9a32ae838f8, get {url=https://www.affariyet.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54646}, goog:processID: 25120, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54646/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c2af95fd71711762c4de9a32ae838f8
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.affariyet.pages.BasePage.openUrl(BasePage.java:45)
+	at com.affariyet.pages.HomePage.open(HomePage.java:14)
+	at com.affariyet.base.BaseTest.openHomePage(BaseTest.java:61)
+	at com.affariyet.tests.PanierTest.openTestProduct(PanierTest.java:18)
+	at com.affariyet.tests.PanierTest.tc11_suppressionProduit(PanierTest.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+2026-11-10 13:10:37 [INFO ] [TC11] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc11_suppressionProduit_20261110_131037.png
+2026-11-10 13:10:37 [DETAIL] [TC11] Navigateur fermé
+2026-11-10 13:10:37 [INFO ] ==== TC12 - Vérification du panier vide ====
+2026-11-10 13:10:38 [DETAIL] [TC12] Navigateur démarré : chrome
+2026-11-10 13:10:38 [ETAPE] [TC12] Ouverture de https://www.affariyet.com/
+2026-11-10 13:10:39 [ERREUR] [TC12] ÉCHOUÉ (0,2 s) — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:39 [DETAIL] [TC12] Trace complète :
+org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=156.0.8078.80)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6d36b1d6d5bde1efe366a2e35cdec457, get {url=https://www.affariyet.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54656}, goog:processID: 7544, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54656/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d36b1d6d5bde1efe366a2e35cdec457
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.affariyet.pages.BasePage.openUrl(BasePage.java:45)
+	at com.affariyet.pages.HomePage.open(HomePage.java:14)
+	at com.affariyet.base.BaseTest.openHomePage(BaseTest.java:61)
+	at com.affariyet.tests.PanierTest.tc12_panierVide(PanierTest.java:72)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+2026-11-10 13:10:39 [INFO ] [TC12] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc12_panierVide_20261110_131039.png
+2026-11-10 13:10:39 [DETAIL] [TC12] Navigateur fermé
+2026-11-10 13:10:39 [INFO ] ==== TC13 - Connexion valide ====
+2026-11-10 13:10:40 [DETAIL] [TC13] Navigateur démarré : chrome
+2026-11-10 13:10:40 [INFO ] [TC13] IGNORÉ — Identifiants absents : définir AFFARIYET_EMAIL et AFFARIYET_PASSWORD (compte de test personnel) pour exécuter ce test
+2026-11-10 13:10:40 [DETAIL] [TC13] Navigateur fermé
+2026-11-10 13:10:40 [INFO ] ==== TC14 - Connexion invalide ====
+2026-11-10 13:10:41 [DETAIL] [TC14] Navigateur démarré : chrome
+2026-11-10 13:10:41 [ETAPE] [TC14] Ouverture de https://www.affariyet.com/
+2026-11-10 13:10:41 [ERREUR] [TC14] ÉCHOUÉ (0,2 s) — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:41 [DETAIL] [TC14] Trace complète :
+org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=156.0.8078.80)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [304ff6b711310dc6250c03dbc230e36d, get {url=https://www.affariyet.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54676}, goog:processID: 19832, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54676/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 304ff6b711310dc6250c03dbc230e36d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.affariyet.pages.BasePage.openUrl(BasePage.java:45)
+	at com.affariyet.pages.HomePage.open(HomePage.java:14)
+	at com.affariyet.base.BaseTest.openHomePage(BaseTest.java:61)
+	at com.affariyet.tests.CompteTest.tc14_connexionInvalide(CompteTest.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+2026-11-10 13:10:41 [INFO ] [TC14] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc14_connexionInvalide_20261110_131041.png
+2026-11-10 13:10:41 [DETAIL] [TC14] Navigateur fermé
+2026-11-10 13:10:41 [INFO ] ==== TC15 - Accès à la page d'inscription ====
+2026-11-10 13:10:42 [DETAIL] [TC15] Navigateur démarré : chrome
+2026-11-10 13:10:42 [ETAPE] [TC15] Ouverture de https://www.affariyet.com/
+2026-11-10 13:10:42 [ERREUR] [TC15] ÉCHOUÉ (0,2 s) — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:42 [DETAIL] [TC15] Trace complète :
+org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=156.0.8078.80)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b4ff843e4fc08d57460c9e387b4d8b42, get {url=https://www.affariyet.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54686}, goog:processID: 29628, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54686/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b4ff843e4fc08d57460c9e387b4d8b42
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.affariyet.pages.BasePage.openUrl(BasePage.java:45)
+	at com.affariyet.pages.HomePage.open(HomePage.java:14)
+	at com.affariyet.base.BaseTest.openHomePage(BaseTest.java:61)
+	at com.affariyet.tests.CompteTest.tc15_accesInscription(CompteTest.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+2026-11-10 13:10:42 [INFO ] [TC15] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc15_accesInscription_20261110_131042.png
+2026-11-10 13:10:42 [DETAIL] [TC15] Navigateur fermé
+2026-11-10 13:10:42 [INFO ] ==== TC16 - Validation des champs obligatoires ====
+2026-11-10 13:10:43 [DETAIL] [TC16] Navigateur démarré : chrome
+2026-11-10 13:10:43 [ETAPE] [TC16] Ouverture de https://www.affariyet.com/
+2026-11-10 13:10:43 [ERREUR] [TC16] ÉCHOUÉ (0,2 s) — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:43 [DETAIL] [TC16] Trace complète :
+org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=156.0.8078.80)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ddb2cc490f898df96747d0a48fe56fb0, get {url=https://www.affariyet.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54695}, goog:processID: 29256, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54695/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ddb2cc490f898df96747d0a48fe56fb0
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.affariyet.pages.BasePage.openUrl(BasePage.java:45)
+	at com.affariyet.pages.HomePage.open(HomePage.java:14)
+	at com.affariyet.base.BaseTest.openHomePage(BaseTest.java:61)
+	at com.affariyet.tests.CompteTest.tc16_validationChampsObligatoires(CompteTest.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+2026-11-10 13:10:44 [INFO ] [TC16] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc16_validationChampsObligatoires_20261110_131043.png
+2026-11-10 13:10:44 [DETAIL] [TC16] Navigateur fermé
+2026-11-10 13:10:44 [INFO ] ==== TC17 - Consultation des informations de livraison ====
+2026-11-10 13:10:44 [DETAIL] [TC17] Navigateur démarré : chrome
+2026-11-10 13:10:44 [ETAPE] [TC17] Ouverture de https://www.affariyet.com/
+2026-11-10 13:10:45 [ERREUR] [TC17] ÉCHOUÉ (0,1 s) — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:45 [DETAIL] [TC17] Trace complète :
+org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=156.0.8078.80)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5594f166ebbe0713795a657e4c8336b2, get {url=https://www.affariyet.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54705}, goog:processID: 12092, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54705/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5594f166ebbe0713795a657e4c8336b2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.affariyet.pages.BasePage.openUrl(BasePage.java:45)
+	at com.affariyet.pages.HomePage.open(HomePage.java:14)
+	at com.affariyet.base.BaseTest.openHomePage(BaseTest.java:61)
+	at com.affariyet.tests.PagesInformationTest.tc17_informationsLivraison(PagesInformationTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+2026-11-10 13:10:45 [INFO ] [TC17] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc17_informationsLivraison_20261110_131045.png
+2026-11-10 13:10:45 [DETAIL] [TC17] Navigateur fermé
+2026-11-10 13:10:45 [INFO ] ==== TC18 - Consultation de la page contact ====
+2026-11-10 13:10:46 [DETAIL] [TC18] Navigateur démarré : chrome
+2026-11-10 13:10:46 [ETAPE] [TC18] Ouverture de https://www.affariyet.com/
+2026-11-10 13:10:46 [ERREUR] [TC18] ÉCHOUÉ (0,2 s) — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:46 [DETAIL] [TC18] Trace complète :
+org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=156.0.8078.80)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d7acda0e65c765d17f5a81a15cdb0d8c, get {url=https://www.affariyet.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54714}, goog:processID: 29244, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54714/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d7acda0e65c765d17f5a81a15cdb0d8c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.affariyet.pages.BasePage.openUrl(BasePage.java:45)
+	at com.affariyet.pages.HomePage.open(HomePage.java:14)
+	at com.affariyet.base.BaseTest.openHomePage(BaseTest.java:61)
+	at com.affariyet.tests.PagesInformationTest.tc18_pageContact(PagesInformationTest.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+2026-11-10 13:10:46 [INFO ] [TC18] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc18_pageContact_20261110_131046.png
+2026-11-10 13:10:46 [DETAIL] [TC18] Navigateur fermé
+2026-11-10 13:10:46 [INFO ] ==== TC19 - Navigation entre les pages de produits (pagination) ====
+2026-11-10 13:10:47 [DETAIL] [TC19] Navigateur démarré : chrome
+2026-11-10 13:10:47 [ETAPE] [TC19] Ouverture de https://www.affariyet.com/
+2026-11-10 13:10:47 [ERREUR] [TC19] ÉCHOUÉ (0,1 s) — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:47 [DETAIL] [TC19] Trace complète :
+org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=156.0.8078.80)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [10cfad51b15ab1174e67ef76a7fca2b5, get {url=https://www.affariyet.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54723}, goog:processID: 5156, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54723/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 10cfad51b15ab1174e67ef76a7fca2b5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.affariyet.pages.BasePage.openUrl(BasePage.java:45)
+	at com.affariyet.pages.HomePage.open(HomePage.java:14)
+	at com.affariyet.base.BaseTest.openHomePage(BaseTest.java:61)
+	at com.affariyet.tests.RechercheTest.tc19_navigationEntrePagesProduits(RechercheTest.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+2026-11-10 13:10:47 [INFO ] [TC19] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc19_navigationEntrePagesProduits_20261110_131047.png
+2026-11-10 13:10:47 [DETAIL] [TC19] Navigateur fermé
+2026-11-10 13:10:47 [INFO ] ==== TC20 - Fonctionnalité supplémentaire : tri par prix croissant ====
+2026-11-10 13:10:48 [DETAIL] [TC20] Navigateur démarré : chrome
+2026-11-10 13:10:48 [ETAPE] [TC20] Ouverture de https://www.affariyet.com/
+2026-11-10 13:10:48 [ERREUR] [TC20] ÉCHOUÉ (0,1 s) — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:48 [DETAIL] [TC20] Trace complète :
+org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=156.0.8078.80)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ec6164fecbd172e7ee26c44323f3ff7, get {url=https://www.affariyet.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54732}, goog:processID: 29404, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54732/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ec6164fecbd172e7ee26c44323f3ff7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.affariyet.pages.BasePage.openUrl(BasePage.java:45)
+	at com.affariyet.pages.HomePage.open(HomePage.java:14)
+	at com.affariyet.base.BaseTest.openHomePage(BaseTest.java:61)
+	at com.affariyet.tests.RechercheTest.tc20_triParPrixCroissant(RechercheTest.java:63)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+2026-11-10 13:10:48 [INFO ] [TC20] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc20_triParPrixCroissant_20261110_131048.png
+2026-11-10 13:10:48 [DETAIL] [TC20] Navigateur fermé
+2026-11-10 13:10:48 [INFO ] ====================================================================================================
+2026-11-10 13:10:48 [INFO ] BILAN GLOBAL : 20 tests — 2 réussi(s), 17 échoué(s), 1 ignoré(s) — durée cumulée 149,4 s, durée totale 172,8 s
+2026-11-10 13:10:48 [INFO ]   ÉCHOUÉ : TC02 - Vérification du titre de la page d'accueil — TimeoutException : Expected condition failed: waiting for com.affariyet.utils.WaitUtils$$Lambda$665/0x00000277be232d90@3174cb09 (tried for 20 second(s) with 500 milliseconds interval)
+2026-11-10 13:10:49 [INFO ]   ÉCHOUÉ : TC04 - Recherche d'un produit inexistant — Le message « aucun produit » n'est pas affiché
+2026-11-10 13:10:49 [INFO ]   ÉCHOUÉ : TC05 - Navigation entre catégories — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:49 [INFO ]   ÉCHOUÉ : TC06 - Consultation d'un produit — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:49 [INFO ]   ÉCHOUÉ : TC07 - Vérification du prix d'un produit — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:49 [INFO ]   ÉCHOUÉ : TC08 - Ajout d'un produit au panier — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:49 [INFO ]   ÉCHOUÉ : TC09 - Vérification du contenu du panier — TimeoutException : Expected condition failed: waiting for element to be clickable: By.cssSelector: input[name='s'] (tried for 20 second(s) with 500 milliseconds interval)
+2026-11-10 13:10:49 [INFO ]   ÉCHOUÉ : TC10 - Modification de la quantité — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:49 [INFO ]   ÉCHOUÉ : TC11 - Suppression d'un produit du panier — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:49 [INFO ]   ÉCHOUÉ : TC12 - Vérification du panier vide — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:49 [INFO ]   ÉCHOUÉ : TC14 - Connexion invalide — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:49 [INFO ]   ÉCHOUÉ : TC15 - Accès à la page d'inscription — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:49 [INFO ]   ÉCHOUÉ : TC16 - Validation des champs obligatoires — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:49 [INFO ]   ÉCHOUÉ : TC17 - Consultation des informations de livraison — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:49 [INFO ]   ÉCHOUÉ : TC18 - Consultation de la page contact — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:49 [INFO ]   ÉCHOUÉ : TC19 - Navigation entre les pages de produits (pagination) — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:49 [INFO ]   ÉCHOUÉ : TC20 - Fonctionnalité supplémentaire : tri par prix croissant — WebDriverException : unknown error: net::ERR_NAME_NOT_RESOLVED
+2026-11-10 13:10:49 [INFO ]   IGNORÉ : TC13 - Connexion valide — Identifiants absents : définir AFFARIYET_EMAIL et AFFARIYET_PASSWORD (compte de test personnel) pour exécuter ce test
+2026-11-10 13:10:49 [INFO ]   Rapports : reports\rapport-execution.html · test-output\index.html · reports\logs\execution.log
+2026-11-10 13:10:49 [INFO ] ====================================================================================================
+2026-11-10 13:10:49 [INFO ] Rapport HTML généré : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\reports\rapport-execution.html
+2026-11-10 13:16:43 [INFO ] ==== TC01 - Accès à la page d'accueil ====
+2026-11-10 13:16:43 [INFO ] Note : avertissements « CDP / DevTools » de Selenium 4.27 filtrés (Chrome plus récent que Selenium, fonctionnalité non utilisée par le projet). Réactivation : -Dselenium.cdp.avertissements=true
+2026-11-10 13:16:44 [DETAIL] [TC01] Navigateur démarré : chrome
+2026-11-10 13:16:44 [ETAPE] [TC01] Ouverture de https://www.affariyet.com/
+2026-11-10 13:16:48 [INFO ] [TC01] RÉUSSI (4,1 s)
+2026-11-10 13:16:48 [DETAIL] [TC01] Navigateur fermé
+2026-11-10 13:16:48 [INFO ] ==== TC02 - Vérification du titre de la page d'accueil ====
+2026-11-10 13:16:49 [DETAIL] [TC02] Navigateur démarré : chrome
+2026-11-10 13:16:49 [ETAPE] [TC02] Ouverture de https://www.affariyet.com/
+2026-11-10 13:16:53 [INFO ] [TC02] Titre de la page : Affariyet.com : Vente en Ligne Tunisie |smartphone, Informatique, Electroménager
+2026-11-10 13:16:53 [INFO ] [TC02] RÉUSSI (3,4 s)
+2026-11-10 13:16:53 [DETAIL] [TC02] Navigateur fermé
+2026-11-10 13:16:53 [INFO ] ==== TC03 - Recherche d'un produit existant ====
+2026-11-10 13:16:54 [DETAIL] [TC03] Navigateur démarré : chrome
+2026-11-10 13:16:54 [DETAIL] [TC03] 14 données de test chargées depuis test-data/testdata.csv
+2026-11-10 13:16:54 [ETAPE] [TC03] Ouverture de https://www.affariyet.com/
+2026-11-10 13:16:58 [ETAPE] [TC03] Recherche du mot-clé : samsung
+2026-11-10 13:17:01 [INFO ] [TC03] Nombre de produits annoncé : 205
+2026-11-10 13:17:01 [INFO ] [TC03] RÉUSSI (7,8 s)
+2026-11-10 13:17:02 [DETAIL] [TC03] Navigateur fermé
+2026-11-10 13:17:02 [INFO ] ==== TC04 - Recherche d'un produit inexistant ====
+2026-11-10 13:17:02 [DETAIL] [TC04] Navigateur démarré : chrome
+2026-11-10 13:17:02 [ETAPE] [TC04] Ouverture de https://www.affariyet.com/
+2026-11-10 13:17:07 [ETAPE] [TC04] Recherche du mot-clé : zzqxwproduitinexistant
+2026-11-10 13:17:10 [INFO ] [TC04] RÉUSSI (7,4 s)
+2026-11-10 13:17:10 [DETAIL] [TC04] Navigateur fermé
+2026-11-10 13:17:10 [INFO ] ==== TC05 - Navigation entre catégories ====
+2026-11-10 13:17:11 [DETAIL] [TC05] Navigateur démarré : chrome
+2026-11-10 13:17:11 [ETAPE] [TC05] Ouverture de https://www.affariyet.com/
+2026-11-10 13:17:15 [ETAPE] [TC05] Clic sur la catégorie « Réfrigérateurs » dans le pied de page
+2026-11-10 13:17:20 [ETAPE] [TC05] Clic sur la catégorie « Lave Linge » dans le pied de page
+2026-11-10 13:17:25 [INFO ] [TC05] RÉUSSI (14,4 s)
+2026-11-10 13:17:25 [DETAIL] [TC05] Navigateur fermé
+2026-11-10 13:17:25 [INFO ] ==== TC06 - Consultation d'un produit ====
+2026-11-10 13:17:26 [DETAIL] [TC06] Navigateur démarré : chrome
+2026-11-10 13:17:26 [ETAPE] [TC06] Ouverture de https://www.affariyet.com/
+2026-11-10 13:17:31 [ETAPE] [TC06] Recherche du mot-clé : samsung
+2026-11-10 13:17:35 [ETAPE] [TC06] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+2026-11-10 13:17:39 [INFO ] [TC06] RÉUSSI (12,9 s)
+2026-11-10 13:17:39 [DETAIL] [TC06] Navigateur fermé
+2026-11-10 13:17:39 [INFO ] ==== TC07 - Vérification du prix d'un produit ====
+2026-11-10 13:17:40 [DETAIL] [TC07] Navigateur démarré : chrome
+2026-11-10 13:17:40 [ETAPE] [TC07] Ouverture de https://www.affariyet.com/
+2026-11-10 13:17:44 [ETAPE] [TC07] Recherche du mot-clé : samsung
+2026-11-10 13:17:48 [ETAPE] [TC07] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+2026-11-10 13:17:51 [INFO ] [TC07] Prix liste = 2 369,000 TND | prix fiche = 2 369,000 TND
+2026-11-10 13:17:51 [INFO ] [TC07] RÉUSSI (11,1 s)
+2026-11-10 13:17:51 [DETAIL] [TC07] Navigateur fermé
+2026-11-10 13:17:51 [INFO ] ==== TC08 - Ajout d'un produit au panier ====
+2026-11-10 13:17:52 [DETAIL] [TC08] Navigateur démarré : chrome
+2026-11-10 13:17:52 [ETAPE] [TC08] Ouverture de https://www.affariyet.com/
+2026-11-10 13:17:55 [ETAPE] [TC08] Recherche du mot-clé : samsung
+2026-11-10 13:17:59 [ETAPE] [TC08] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+2026-11-10 13:18:02 [ETAPE] [TC08] Clic sur « Ajouter au panier »
+2026-11-10 13:18:04 [INFO ] [TC08] Compteur du panier = 1
+2026-11-10 13:18:04 [INFO ] [TC08] RÉUSSI (12,0 s)
+2026-11-10 13:18:04 [DETAIL] [TC08] Navigateur fermé
+2026-11-10 13:18:04 [INFO ] ==== TC09 - Vérification du contenu du panier ====
+2026-11-10 13:18:05 [DETAIL] [TC09] Navigateur démarré : chrome
+2026-11-10 13:18:05 [ETAPE] [TC09] Ouverture de https://www.affariyet.com/
+2026-11-10 13:18:12 [ETAPE] [TC09] Recherche du mot-clé : samsung
+2026-11-10 13:18:16 [ETAPE] [TC09] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+2026-11-10 13:18:24 [ETAPE] [TC09] Clic sur « Ajouter au panier »
+2026-11-10 13:18:28 [INFO ] [TC09] Compteur du panier = 1
+2026-11-10 13:18:28 [ETAPE] [TC09] Ouverture de https://www.affariyet.com/panier?action=show
+2026-11-10 13:18:35 [INFO ] [TC09] RÉUSSI (30,5 s)
+2026-11-10 13:18:35 [DETAIL] [TC09] Navigateur fermé
+2026-11-10 13:18:35 [INFO ] ==== TC10 - Modification de la quantité ====
+2026-11-10 13:18:36 [DETAIL] [TC10] Navigateur démarré : chrome
+2026-11-10 13:18:36 [ETAPE] [TC10] Ouverture de https://www.affariyet.com/
+2026-11-10 13:18:47 [ETAPE] [TC10] Recherche du mot-clé : samsung
+2026-11-10 13:19:00 [ETAPE] [TC10] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+2026-11-10 13:19:04 [ETAPE] [TC10] Clic sur « + » (quantité actuelle : 1)
+2026-11-10 13:19:05 [ETAPE] [TC10] Clic sur « Ajouter au panier »
+2026-11-10 13:19:06 [INFO ] [TC10] Compteur du panier = 2
+2026-11-10 13:19:06 [INFO ] [TC10] RÉUSSI (29,8 s)
+2026-11-10 13:19:07 [DETAIL] [TC10] Navigateur fermé
+2026-11-10 13:19:07 [INFO ] ==== TC11 - Suppression d'un produit du panier ====
+2026-11-10 13:19:08 [DETAIL] [TC11] Navigateur démarré : chrome
+2026-11-10 13:19:08 [ETAPE] [TC11] Ouverture de https://www.affariyet.com/
+2026-11-10 13:19:17 [ETAPE] [TC11] Recherche du mot-clé : samsung
+2026-11-10 13:19:24 [ETAPE] [TC11] Ouverture du premier produit : Réfrigérateur SAMSUNG 388 Litres NoFrost RT38CG6420S9EL -Inox
+2026-11-10 13:19:30 [ETAPE] [TC11] Clic sur « Ajouter au panier »
+2026-11-10 13:19:31 [INFO ] [TC11] Compteur du panier = 1
+2026-11-10 13:19:31 [ETAPE] [TC11] Ouverture de https://www.affariyet.com/panier?action=show
+2026-11-10 13:19:33 [ETAPE] [TC11] Suppression de la première ligne du panier
+2026-11-10 13:19:35 [INFO ] [TC11] RÉUSSI (27,7 s)
+2026-11-10 13:19:35 [DETAIL] [TC11] Navigateur fermé
+2026-11-10 13:19:35 [INFO ] ==== TC12 - Vérification du panier vide ====
+2026-11-10 13:19:36 [DETAIL] [TC12] Navigateur démarré : chrome
+2026-11-10 13:19:36 [ETAPE] [TC12] Ouverture de https://www.affariyet.com/
+2026-11-10 13:19:52 [ETAPE] [TC12] Ouverture de https://www.affariyet.com/panier?action=show
+2026-11-10 13:19:56 [INFO ] [TC12] RÉUSSI (19,6 s)
+2026-11-10 13:19:56 [DETAIL] [TC12] Navigateur fermé
+2026-11-10 13:19:56 [INFO ] ==== TC13 - Connexion valide ====
+2026-11-10 13:19:57 [DETAIL] [TC13] Navigateur démarré : chrome
+2026-11-10 13:19:57 [INFO ] [TC13] IGNORÉ — Identifiants absents : définir AFFARIYET_EMAIL et AFFARIYET_PASSWORD (compte de test personnel) pour exécuter ce test
+2026-11-10 13:19:57 [DETAIL] [TC13] Navigateur fermé
+2026-11-10 13:19:57 [INFO ] ==== TC14 - Connexion invalide ====
+2026-11-10 13:19:58 [DETAIL] [TC14] Navigateur démarré : chrome
+2026-11-10 13:19:58 [ETAPE] [TC14] Ouverture de https://www.affariyet.com/
+2026-11-10 13:20:08 [ETAPE] [TC14] Clic sur « Connexion » dans l'en-tête
+2026-11-10 13:20:18 [ETAPE] [TC14] Connexion avec l'e-mail : compte.inexistant@example.com
+2026-11-10 13:20:22 [INFO ] [TC14] RÉUSSI (23,7 s)
+2026-11-10 13:20:22 [DETAIL] [TC14] Navigateur fermé
+2026-11-10 13:20:22 [INFO ] ==== TC15 - Accès à la page d'inscription ====
+2026-11-10 13:20:22 [DETAIL] [TC15] Navigateur démarré : chrome
+2026-11-10 13:20:22 [ETAPE] [TC15] Ouverture de https://www.affariyet.com/
+2026-11-10 13:20:37 [ETAPE] [TC15] Clic sur « Connexion » dans l'en-tête
+2026-11-10 13:20:44 [ETAPE] [TC15] Clic sur « Pas de compte ? Créez-en un »
+2026-11-10 13:20:50 [INFO ] [TC15] RÉUSSI (27,1 s)
+2026-11-10 13:20:50 [DETAIL] [TC15] Navigateur fermé
+2026-11-10 13:20:50 [INFO ] ==== TC16 - Validation des champs obligatoires ====
+2026-11-10 13:20:50 [DETAIL] [TC16] Navigateur démarré : chrome
+2026-11-10 13:20:50 [ETAPE] [TC16] Ouverture de https://www.affariyet.com/
+2026-11-10 13:21:04 [ETAPE] [TC16] Clic sur « Connexion » dans l'en-tête
+2026-11-10 13:21:11 [ETAPE] [TC16] Clic sur « Connexion » avec des champs vides
+2026-11-10 13:21:11 [INFO ] [TC16] Message de validation du navigateur : Veuillez renseigner ce champ.
+2026-11-10 13:21:11 [ETAPE] [TC16] Clic sur « Pas de compte ? Créez-en un »
+2026-11-10 13:21:16 [INFO ] [TC16] Champs obligatoires de l'inscription : [customer_firstname, customer_lastname, customer_email]
+2026-11-10 13:21:16 [INFO ] [TC16] RÉUSSI (25,4 s)
+2026-11-10 13:21:16 [DETAIL] [TC16] Navigateur fermé
+2026-11-10 13:21:16 [INFO ] ==== TC17 - Consultation des informations de livraison ====
+2026-11-10 13:21:17 [DETAIL] [TC17] Navigateur démarré : chrome
+2026-11-10 13:21:17 [ETAPE] [TC17] Ouverture de https://www.affariyet.com/
+2026-11-10 13:21:29 [ETAPE] [TC17] Clic sur « Livraison » dans le pied de page
+2026-11-10 13:21:32 [INFO ] [TC17] RÉUSSI (15,2 s)
+2026-11-10 13:21:32 [DETAIL] [TC17] Navigateur fermé
+2026-11-10 13:21:32 [INFO ] ==== TC18 - Consultation de la page contact ====
+2026-11-10 13:21:33 [DETAIL] [TC18] Navigateur démarré : chrome
+2026-11-10 13:21:33 [ETAPE] [TC18] Ouverture de https://www.affariyet.com/
+2026-11-10 13:21:52 [ETAPE] [TC18] Clic sur « CONTACT » dans le menu
+2026-11-10 13:21:59 [ETAPE] [TC18] Remplissage du formulaire de contact (sans envoi)
+2026-11-10 13:21:59 [ETAPE] [TC18] Cochage de la case de consentement
+2026-11-10 13:21:59 [INFO ] [TC18] RÉUSSI (25,8 s)
+2026-11-10 13:21:59 [DETAIL] [TC18] Navigateur fermé
+2026-11-10 13:21:59 [INFO ] ==== TC19 - Navigation entre les pages de produits (pagination) ====
+2026-11-10 13:22:00 [DETAIL] [TC19] Navigateur démarré : chrome
+2026-11-10 13:22:00 [ETAPE] [TC19] Ouverture de https://www.affariyet.com/
+2026-11-10 13:22:16 [ETAPE] [TC19] Recherche du mot-clé : samsung
+2026-11-10 13:22:23 [ETAPE] [TC19] Clic sur « Suivant » (pagination)
+2026-11-10 13:22:25 [INFO ] [TC19] Pagination page 2 : Affichage 17-32 de 205 article(s) navigate_beforePRÉCÉDENT 1 2 3 … 13 SUIVANTnavigate_next
+2026-11-10 13:22:25 [INFO ] [TC19] RÉUSSI (24,6 s)
+2026-11-10 13:22:25 [DETAIL] [TC19] Navigateur fermé
+2026-11-10 13:22:25 [INFO ] ==== TC20 - Fonctionnalité supplémentaire : tri par prix croissant ====
+2026-11-10 13:22:25 [DETAIL] [TC20] Navigateur démarré : chrome
+2026-11-10 13:22:25 [ETAPE] [TC20] Ouverture de https://www.affariyet.com/
+2026-11-10 13:22:30 [ETAPE] [TC20] Recherche du mot-clé : samsung
+2026-11-10 13:22:33 [ETAPE] [TC20] Tri par prix croissant
+2026-11-10 13:22:53 [ERREUR] [TC20] ÉCHOUÉ (27,5 s) — TimeoutException : Expected condition failed: waiting for url to contain "order=product.price.asc". Current url: "https://www.affariyet.com/recherche?controller=search&s=samsung" (tried for 20 second(s) with 500 milliseconds interval)
+2026-11-10 13:22:53 [DETAIL] [TC20] Trace complète :
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "order=product.price.asc". Current url: "https://www.affariyet.com/recherche?controller=search&s=samsung" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55583}, goog:processID: 27932, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55583/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ac055a45dacc0d8ede6942a95ec7cec
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.affariyet.utils.WaitUtils.urlContains(WaitUtils.java:58)
+	at com.affariyet.pages.ProductListPage.sortByPriceAscending(ProductListPage.java:101)
+	at com.affariyet.tests.RechercheTest.tc20_triParPrixCroissant(RechercheTest.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+2026-11-10 13:22:53 [INFO ] [TC20] Capture d'écran enregistrée : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\screenshots\tc20_triParPrixCroissant_20261110_132253.png
+2026-11-10 13:22:53 [DETAIL] [TC20] Navigateur fermé
+2026-11-10 13:22:53 [INFO ] ====================================================================================================
+2026-11-10 13:22:53 [INFO ] BILAN GLOBAL : 20 tests — 18 réussi(s), 1 échoué(s), 1 ignoré(s) — durée cumulée 350,0 s, durée totale 370,7 s
+2026-11-10 13:22:53 [INFO ]   ÉCHOUÉ : TC20 - Fonctionnalité supplémentaire : tri par prix croissant — TimeoutException : Expected condition failed: waiting for url to contain "order=product.price.asc". Current url: "https://www.affariyet.com/recherche?controller=search&s=samsung" (tried for 20 second(s) with 500 milliseconds interval)
+2026-11-10 13:22:53 [INFO ]   IGNORÉ : TC13 - Connexion valide — Identifiants absents : définir AFFARIYET_EMAIL et AFFARIYET_PASSWORD (compte de test personnel) pour exécuter ce test
+2026-11-10 13:22:53 [INFO ]   Rapports : reports\rapport-execution.html · test-output\index.html · reports\logs\execution.log
+2026-11-10 13:22:53 [INFO ] ====================================================================================================
+2026-11-10 13:22:53 [INFO ] Rapport HTML généré : D:\D\3eme_cycle\devops\AffariyetAutomation\demo\reports\rapport-execution.html
